@@ -1,0 +1,361 @@
+<?xml version="1.0" encoding="utf-8"?>
+ <ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+            xmlns:fab="http://schemas.android.com/apk/res-auto"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <LinearLayout
+                android:id="@+id/first_ll"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:visibility="visible">
+
+                <LinearLayout
+                    android:layout_width="fill_parent"
+                    android:layout_height="200dp"
+                    android:orientation="vertical">
+
+                    <RelativeLayout
+                        android:layout_width="fill_parent"
+                        android:layout_height="wrap_content"
+                        android:gravity="center|top"
+                        android:orientation="vertical">
+
+                        <ImageView
+                            android:layout_gravity="center_horizontal"
+                            android:layout_width="match_parent"
+                            android:layout_height="210dp"
+                            android:scaleType="centerCrop"
+                            android:id="@+id/back_img"
+                            android:src="@drawable/news_feed_img"
+                            android:alpha=".8"
+                            />
+
+
+                        <views.CustomEditTextViewRegular
+                            android:id="@+id/txt_username"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:textAppearance="?android:attr/textAppearanceSmall"
+                            android:text="Abhishek Shukla"
+                            android:layout_margin="10dp"
+                            android:textSize="20dp"
+                            android:enabled="false"
+                            android:background="@null"
+                            android:textColor="@color/white"
+                            android:layout_alignParentLeft="true" />
+
+
+                        <RelativeLayout
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_centerInParent="true">
+
+                            <FrameLayout
+                                android:layout_width="130dp"
+                                android:layout_height="100dp"
+                                android:layout_centerInParent="true" >
+
+                                <de.hdodenhof.circleimageview.CircleImageView
+                                    android:id="@+id/user_profile_img"
+                                    android:layout_gravity="center_horizontal"
+                                    android:layout_width="100dp"
+                                    android:layout_height="100dp"
+                                    fab:siBorderWidth="1dp"
+                                    fab:siBorderColor="@color/grey"
+                                    android:src="@drawable/default_profile_picture"/>
+
+                                <ImageView
+                                    android:id="@+id/donor_icon"
+                                    android:layout_width="20dp"
+                                    android:layout_height="20dp"
+                                    android:src="@drawable/donor_icon"
+                                    android:visibility="gone"
+                                    android:layout_gravity="bottom|right"
+                                    />
+                            </FrameLayout>
+
+                        </RelativeLayout>
+
+
+
+                        <RelativeLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:background="#010101"
+                            android:layout_alignParentBottom="true"
+                            android:paddingLeft="5dp"
+                            android:paddingRight="5dp">
+
+
+                            <views.CustomTextViewLight
+                                android:id="@+id/photo2"
+                                android:layout_gravity="center_horizontal"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:textSize="18dp"
+                                android:textColor="#CCffffff"
+                                android:text="Total\nRecognition"
+                                android:layout_alignParentLeft="true"
+                                android:src="@drawable/default_profile_picture"
+                                />
+
+
+                        <TextView
+                            android:id="@+id/recognition_given"
+                            android:layout_gravity="center_horizontal"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:textSize="18dp"
+                            android:textColor="@color/white"
+                            android:text="Given\n0"
+                            android:layout_centerHorizontal="true"
+                            android:src="@drawable/default_profile_picture"
+                            />
+
+
+                        <TextView
+                            android:id="@+id/recognition_recieved"
+                            android:layout_gravity="center_horizontal"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:textSize="18dp"
+                            android:textColor="@color/white"
+                            android:text="Received\n0"
+                            android:src="@drawable/default_profile_picture"
+                            android:layout_alignParentRight="true" />
+
+                        </RelativeLayout>
+                    </RelativeLayout>
+
+
+                </LinearLayout>
+                <LinearLayout
+                    android:orientation="horizontal"
+                    android:layout_width="match_parent"
+                    android:layout_height="50dp"
+                    android:background="@drawable/rect_white"
+                    android:weightSum="1">
+
+                    <ImageView
+                        android:layout_weight=".25"
+                        android:id="@+id/connecttosolve_icon"
+                        android:layout_width="0dp"
+                        android:layout_height="match_parent"
+                        android:src="@drawable/connect_to_solve"
+                        android:layout_gravity="center_vertical" />
+
+
+
+                    <ImageView
+                        android:layout_weight=".25"
+                        android:id="@+id/mvoice_icon"
+                        android:layout_width="0dp"
+                        android:layout_height="match_parent"
+                        android:src="@drawable/mvoice_icon"
+                        android:layout_gravity="center_vertical"
+                        />
+
+                    <ImageView
+                        android:layout_weight=".25"
+                        android:id="@+id/toread_icon"
+                        android:layout_width="0dp"
+                        android:layout_height="match_parent"
+                        android:src="@drawable/new_to_read_ic"
+                        android:layout_gravity="center_vertical" />
+
+                    <ImageView
+                        android:layout_weight=".25"
+                        android:id="@+id/gp_tan_ic"
+                        android:layout_width="0dp"
+                        android:layout_height="match_parent"
+                        android:src="@drawable/group_tab_ic"
+                        android:layout_gravity="center_vertical"
+                        android:visibility="visible"
+                        />
+
+                </LinearLayout>
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical">
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center"
+                        android:gravity="center"
+                        android:orientation="horizontal"
+                        android:padding="10dp">
+
+                        <me.grantland.widget.AutofitTextView
+                            android:id="@+id/quote"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:gravity="center_horizontal"
+                            android:textColor="@color/black"
+                            android:text="@string/test"
+                            android:textSize="18dp"
+                            android:maxLines="5"
+                            />
+
+                    </LinearLayout>
+
+                    <RelativeLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:padding="10dp">
+
+                             <TextView
+                                 android:id="@+id/cmp"
+                                android:layout_width="120dp"
+                                android:gravity="center|left"
+                                android:layout_height="wrap_content"
+                                android:textColor="#b3000000"
+                                android:text="Company       :"
+                                android:textSize="16sp"
+                                />
+
+
+                            <me.grantland.widget.AutofitTextView
+                                android:layout_toRightOf="@+id/cmp"
+                                android:id="@+id/company_txt"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:textColor="@color/black"
+                                android:text="company"
+                                android:textSize="18sp"
+                                android:maxLines="2"
+                                />
+
+
+
+                    </RelativeLayout>
+
+                    <RelativeLayout
+                        android:layout_width="fill_parent"
+                        android:layout_height="wrap_content"
+                        android:padding="10dp"
+                      >
+
+
+                            <TextView
+                                android:id="@+id/dep"
+                                android:layout_width="120dp"
+                                android:gravity="center|left"
+                                android:layout_height="wrap_content"
+                                android:textColor="#b3000000"
+                                android:text="Department   :"
+                                android:textSize="16sp"
+                                />
+
+
+                            <me.grantland.widget.AutofitTextView
+                                android:layout_toRightOf="@+id/dep"
+                                android:id="@+id/department_txt"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:textColor="@color/black"
+                                android:text="department"
+                                android:textSize="18sp"
+                                android:maxLines="2"
+                                />
+
+
+                    </RelativeLayout>
+
+
+                    <RelativeLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:padding="10dp">
+
+                            <TextView
+                                android:id="@+id/rl"
+                                android:layout_width="120dp"
+                                android:gravity="center|left"
+                                android:layout_height="wrap_content"
+                                android:textColor="#b3000000"
+                                android:text="Role Profile   :"
+                                android:textSize="16sp"
+                                />
+
+                        <me.grantland.widget.AutofitTextView
+                            android:layout_toRightOf="@+id/rl"
+                            android:id="@+id/roleprofile_txt"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:textColor="@color/black"
+                            android:text="role Profile"
+                            android:textSize="18sp"
+                            android:maxLines="2"
+                            />
+                    </RelativeLayout>
+
+
+                    <RelativeLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:padding="10dp">
+
+
+                            <TextView
+                                android:id="@+id/exp"
+                                android:layout_width="120dp"
+                                android:gravity="center|left"
+                                android:layout_height="wrap_content"
+                                android:textColor="#b3000000"
+                                android:text="Experience    :"
+                                android:textSize="16sp"
+                                />
+
+
+                            <me.grantland.widget.AutofitTextView
+                                android:layout_toRightOf="@+id/exp"
+                                android:id="@+id/experience_txt"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:textColor="@color/black"
+                                android:text="experiance"
+                                android:textSize="18sp"
+                                android:maxLines="2"
+                                />
+
+
+                    </RelativeLayout>
+
+                    <RelativeLayout
+                        android:layout_width="fill_parent"
+                        android:layout_height="wrap_content"
+                        android:padding="10dp">
+
+                        <TextView
+                                android:id="@+id/hob"
+                                android:layout_width="120dp"
+                                android:gravity="center|left"
+                                android:layout_height="wrap_content"
+                                android:textColor="#b3000000"
+                                android:text="Hobbies         :"
+                                android:textSize="16sp"
+                                />
+
+                        <me.grantland.widget.AutofitTextView
+                            android:layout_toRightOf="@+id/hob"
+                            android:id="@+id/hobbies_txt"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:textColor="@color/black"
+                            android:text="hobbies"
+                            android:textSize="18sp"
+                            android:maxLines="2"
+                            />
+
+                    </RelativeLayout>
+                </LinearLayout>
+            </LinearLayout>
+
+        </ScrollView>
+
+

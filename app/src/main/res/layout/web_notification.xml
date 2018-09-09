@@ -1,0 +1,77 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:fab="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    android:id="@+id/recentlay"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@color/white"
+    android:weightSum="1">
+
+    <LinearLayout
+        android:layout_weight=".9"
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:padding="5dp"
+        android:weightSum="1">
+
+        <LinearLayout
+            android:layout_weight=".2"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:gravity="center_horizontal|top">
+
+            <com.github.siyamed.shapeimageview.CircularImageView
+                android:id="@+id/posttypeimg"
+                android:layout_gravity="center_horizontal"
+                android:layout_width="55dp"
+                android:layout_height="55dp"
+                android:scaleType="centerCrop"
+                fab:siBorderWidth="2dp"
+                fab:siBorderColor="#ffffff"
+                android:layout_alignBottom="@+id/photo"
+                android:src="@drawable/default_profile_picture"
+                />
+      <!--      <ImageView
+                android:id="@+id/posttypeimg"
+                android:layout_width="45dp"
+                android:layout_height="45dp"
+                android:src="@drawable/default_profile_picture"
+                android:padding="5dp" />-->
+        </LinearLayout>
+
+        <LinearLayout
+            android:orientation="vertical"
+            android:layout_weight=".8"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:gravity="center">
+
+            <views.CustomTextViewRegular
+                android:id="@+id/posttext"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textColor="#272727"
+                android:textSize="17sp"
+                />
+            <views.CustomTextViewRegular
+                android:id="@+id/postdate"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textSize="15sp"
+                android:textColor="#99000000"
+                />
+
+        </LinearLayout>
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_weight=".1"
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="2dp"
+        android:background="#e2e2e2">
+
+    </LinearLayout>
+</LinearLayout>

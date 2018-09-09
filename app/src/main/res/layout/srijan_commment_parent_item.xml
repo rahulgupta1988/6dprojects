@@ -1,0 +1,174 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="#ffffff"
+    android:paddingTop="10dp">
+
+<LinearLayout
+android:id="@+id/parent_lay"
+    android:orientation="horizontal"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:weightSum="1"
+    android:background="#ffffff"
+    android:layout_margin="5dp">
+    <LinearLayout
+        android:orientation="vertical"
+        xmlns:app="http://schemas.android.com/tools"
+        android:layout_weight=".2"
+        android:layout_width="0dp"
+        android:layout_height="match_parent"
+        android:gravity="center_horizontal|top">
+
+        <com.github.siyamed.shapeimageview.RoundedImageView
+            android:id="@+id/user_img"
+            android:layout_width="40dp"
+            android:layout_height="40dp"
+            android:src="@drawable/default_square_user"
+            app:siBorderWidth="3dp"
+            app:siBorderColor="@color/white"
+            />
+
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:orientation="vertical"
+        android:layout_weight=".8"
+        android:layout_width="0dp"
+        android:layout_height="match_parent">
+<LinearLayout
+    android:orientation="horizontal"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:weightSum="1">
+
+    <LinearLayout
+        android:layout_weight=".8"
+        android:orientation="vertical"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content">
+        <TextView
+            android:id="@+id/user_name"
+            android:layout_width="match_parent"
+            android:layout_height="30dp"
+            android:text="Ruchita Mishra"
+            android:textSize="14sp"
+            android:textColor="#3a68d2"
+            android:textStyle="bold"
+            android:maxLines="1"
+            android:ellipsize="end"/>
+
+        <views.CustomTextViewLight
+            android:id="@+id/comment_txt"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Ruchita Mishradadfasdasd"
+            android:textSize="13sp"
+            android:layout_marginTop="1dp"
+            android:textColor="#3d3d3d"
+            android:autoLink="all"/>
+    </LinearLayout>
+    <LinearLayout
+        android:layout_weight=".2"
+        android:orientation="vertical"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content">
+        <FrameLayout
+            android:id="@+id/tag_lay"
+            android:layout_alignParentRight="true"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginRight="10dp">
+
+            <ImageView
+                android:id="@+id/tagicon"
+                android:layout_width="30dp"
+                android:layout_height="20dp"
+                android:src="@drawable/tag_icon"
+                android:layout_marginTop="5dp"
+                />
+
+            <TextView
+                android:id="@+id/tagcount_txt"
+                android:layout_width="15dp"
+                android:layout_height="15dp"
+                android:text="10"
+                android:textColor="#e5e5e5"
+                android:layout_gravity="right|top"
+                android:gravity="center"
+                android:textStyle="bold"
+                android:textSize="10sp"
+                android:background="@drawable/redcircle"
+                android:visibility="visible"/>
+        </FrameLayout>
+    </LinearLayout>
+</LinearLayout>
+
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="40dp">
+
+            <ImageView
+                android:id="@+id/replay_icon"
+                android:layout_width="20dp"
+                android:layout_height="match_parent"
+                android:src="@drawable/srijan_replay"
+                android:layout_centerVertical="true" />
+
+            <TextView
+                android:id="@+id/rep_txt"
+                android:layout_toRightOf="@+id/replay_icon"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:text="Reply"
+                android:textSize="12sp"
+                android:layout_marginLeft="10dp"
+                android:gravity="center_vertical"
+                android:textColor="#3c63d3"
+                android:textStyle="bold"/>
+
+            <ImageView
+                android:id="@+id/attached_ic"
+                android:layout_width="20dp"
+                android:layout_height="20dp"
+                android:src="@drawable/attachment_doc_ic"
+                android:layout_centerVertical="true"
+                android:layout_toLeftOf="@+id/date_time"/>
+
+            <TextView
+                android:id="@+id/date_time"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:text="Mar 28 2017 13:25:07"
+                android:textSize="11sp"
+                android:gravity="center_vertical"
+                android:textColor="#EF7C01"
+                android:layout_toLeftOf="@+id/check_read"
+                android:layout_marginLeft="10dp"
+                android:textStyle="bold"/>
+
+            <ImageView
+                android:layout_alignParentRight="true"
+                android:id="@+id/check_read"
+                android:layout_width="30dp"
+                android:layout_height="30dp"
+                android:src="@drawable/uncheck_read_srijan"
+                android:layout_centerVertical="true"
+                android:layout_marginLeft="15dp"/>
+
+        </RelativeLayout>
+    </LinearLayout>
+
+    </LinearLayout>
+
+    <View
+        android:id="@+id/parent_divider"
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:background="#e5e5e5"/>
+
+</LinearLayout>

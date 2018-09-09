@@ -1,0 +1,113 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="250dp"
+    android:background="@color/white"
+    android:layout_margin="10dp">
+
+    <LinearLayout
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:background="#9f9f9f"
+        android:weightSum="1">
+
+        <ImageView
+            android:id="@+id/cancelshare"
+            android:layout_weight=".2"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:src="@drawable/cross_3x"
+            android:padding="5dp"
+            />
+
+        <TextView
+            android:id="@+id/dialogtitle"
+            android:layout_weight=".6"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:text="Add Subject"
+            android:layout_gravity="center"
+            android:textColor="#ffffff"
+            android:gravity="center"
+            android:textSize="16sp"/>
+
+        <ImageView
+            android:layout_weight=".2"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:padding="5dp"
+            />
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="50dp">
+
+        <LinearLayout
+            android:orientation="vertical"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:weightSum="1"
+            android:background="@color/white"
+            android:layout_margin="5dp"
+            android:gravity="center"
+            android:layout_gravity="center">
+
+
+            <EditText
+                android:id="@+id/xwaysubject"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:hint="Enter Subject"
+                android:textColor="#828282"
+                android:layout_gravity=""
+                android:textSize="15sp"
+                android:background="@drawable/text_field"
+                android:gravity="center"
+                android:padding="5dp"
+                />
+
+
+
+        </LinearLayout>
+
+
+
+        <LinearLayout
+            android:orientation="vertical"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:weightSum="1"
+            android:padding="5dp">
+
+            <ImageButton
+                android:id="@+id/submitbtn"
+                android:layout_width="70dp"
+                android:layout_height="70dp"
+                android:background="@drawable/arrow_blue"
+                android:text="Login"
+                android:textColor="@color/button_color"
+                android:textSize="18sp"
+                android:textAllCaps="false"
+
+                />
+
+          <!--  <TextView
+                android:id="@+id/submitbtn"
+                android:layout_width="200dp"
+                android:layout_height="match_parent"
+                android:background="@drawable/button_blue_3x"
+                android:text="Submit"
+                android:textColor="@color/white"
+                android:textSize="18sp"
+                android:gravity="center" />-->
+
+        </LinearLayout>
+    </LinearLayout>
+</LinearLayout>

@@ -1,0 +1,23 @@
+<resources>
+    <string name="app_name">Xpressions</string>
+
+    <string name="test">"\"In God We Trust,Everything Else We Test\""</string>
+
+   <!-- In God We Trust,Everything Else We Test-->
+
+    <string name="hello_world">Hello world!</string>
+    <string name="action_settings">Settings</string>
+    <string name="error_player">There was an error initializing the YouTubePlayer (%1$s)</string>
+    <string name="nework_connect_error">Please check your Internet Connection!</string>
+    <string name="com.twitter.sdk.android.CONSUMER_KEY">n0XMhm5OKGjWd0lDJ4scyNn7K</string>
+    <string name="com.twitter.sdk.android.CONSUMER_SECRET">R7kqRrdaCTMtucPvMdts0RiMDaWkEyu8oFfkdASMaUBkmqYkOJ</string>
+    <string name="facebook_app_id">1808900009365407</string>
+
+
+
+    // toread addbook
+    <string name="error_bookname">Book name cant not be empty</string>
+    <string name="error_authorname">Author name cant not be empty</string>
+    <string name="error_bookimg">Please Select book image</string>
+    <string name="bookadd_success">Book has been Added successfully!</string>
+</resources>

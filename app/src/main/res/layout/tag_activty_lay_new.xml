@@ -1,0 +1,159 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#ffffff">
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <LinearLayout
+                android:id="@+id/heade_lay"
+                android:orientation="horizontal"
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:visibility="visible"
+                android:layout_marginBottom="5dp"
+                android:layout_marginTop="5dp">
+
+                <ImageView
+                    android:id="@+id/cancelshare"
+                    android:layout_weight=".1"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:src="@drawable/back_arrow"
+                    android:layout_gravity="center"/>
+
+                <views.CustomTextViewRegular
+                    android:layout_weight=".7"
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:text="Tag People"
+                    android:textColor="@color/black"
+                    android:gravity="center_vertical"
+                    android:textSize="18dp"/>
+
+                <TextView
+                    android:id="@+id/tagdone_btn"
+                    android:layout_weight=".2"
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:text="DONE"
+                    android:textColor="#ffffff"
+                    android:gravity="center"
+                    android:textSize="14dp"
+                    android:textStyle="bold"
+                    android:background="@drawable/rectshareforrecopost"
+                    android:layout_margin="8dp"
+                    android:textAllCaps="true"
+
+                    />
+
+
+
+            </LinearLayout>
+            <View
+                android:id="@+id/line1"
+                android:layout_below="@+id/heade_lay"
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:background="#c5c5c5"/>
+
+            <LinearLayout
+                android:orientation="horizontal"
+                android:layout_below="@+id/line1"
+                android:id="@+id/auto_view_lay"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="#e5e5e5"
+                android:drawableLeft="@drawable/search">
+                <RelativeLayout
+                    android:orientation="vertical"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:background="#e5e5e5">
+
+                    <ImageView
+                        android:id="@+id/search_nav"
+                        android:layout_marginLeft="10dp"
+                        android:layout_width="20dp"
+                        android:layout_height="20dp"
+                        android:src="@drawable/search_drawer"
+                        android:visibility="visible"
+                        android:layout_alignParentLeft="true"
+                        android:layout_centerVertical="true"
+                        />
+
+                    <FrameLayout
+                        android:layout_toRightOf="@+id/search_nav"
+                        android:orientation="horizontal"
+                        android:layout_width="match_parent"
+                        android:layout_height="50dp"
+                        android:layout_marginLeft="10dp">
+
+
+                        <LinearLayout
+                            android:orientation="horizontal"
+                            android:id="@+id/searchlay"
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent">
+
+                            <EditText
+                                android:id="@+id/search_edit"
+                                android:layout_width="match_parent"
+                                android:layout_height="match_parent"
+                                android:hint="Search for all"
+                                android:textColor="#000000"
+                                android:background="#00000000"/>
+
+                        </LinearLayout>
+
+
+                    </FrameLayout>
+
+                    <ProgressBar
+                        android:id="@+id/progress_show"
+                        android:layout_width="25dp"
+                        android:layout_height="25dp"
+                        android:layout_alignParentRight="true"
+                        android:layout_centerVertical="true"
+                        android:layout_marginRight="10dp"
+                        android:visibility="gone"/>
+                    <LinearLayout
+                        android:layout_alignParentTop="true"
+                        android:layout_width="match_parent"
+                        android:layout_height="2dp"
+                        android:background="#e5e5e5"></LinearLayout>
+                    <LinearLayout
+                        android:layout_alignParentBottom="true"
+                        android:layout_width="match_parent"
+                        android:layout_height="2dp"
+                        android:background="#e5e5e5"></LinearLayout>
+                </RelativeLayout>
+
+            </LinearLayout>
+
+            <View
+                android:id="@+id/line2"
+                android:layout_below="@+id/auto_view_lay"
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:background="#c5c5c5"/>
+            <ListView
+                android:layout_below="@+id/line2"
+                android:id="@+id/taged_user_list"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:visibility="visible"
+                android:layout_marginTop="10dp">
+
+            </ListView>
+        </RelativeLayout>
+    </ScrollView>
+
+</RelativeLayout>

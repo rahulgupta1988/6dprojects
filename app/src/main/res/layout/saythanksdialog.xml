@@ -1,0 +1,204 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#ffffff"
+    android:weightSum="1">
+
+    <ScrollView
+        android:isScrollContainer="false"
+        android:layout_width="match_parent"
+        android:fillViewport="true"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        android:scrollbars="none">
+
+        <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+            android:orientation="vertical"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <View
+                android:id="@+id/top_lay"
+                android:layout_width="match_parent"
+                android:layout_height="1dp"/>
+
+    <LinearLayout
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="250dp"
+        android:background="@drawable/yello_curve_ic"
+        android:gravity="center"
+        android:layout_gravity="center"
+        android:weightSum="1">
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="50dp"/>
+        <com.github.siyamed.shapeimageview.RoundedImageView
+            xmlns:app="http://schemas.android.com/apk/res-auto"
+            android:id="@+id/bookimg"
+            android:layout_width="100dp"
+            android:layout_height="150dp"
+            android:src="@drawable/default_book_ic"
+            android:adjustViewBounds="true"
+            app:siBorderWidth="2dp"
+            app:siBorderColor="#000000"
+            app:siRadius="5dp"
+            />
+
+        <views.CustomTextViewMedium
+            android:layout_below="@+id/bookimg"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Say thank you for this book"
+            android:textSize="16sp"
+            android:textColor="#be0ac0"
+            android:gravity="center"
+            android:layout_marginTop="10dp"/>
+
+
+
+    </LinearLayout>
+
+            <View
+                android:layout_width="wrap_content"
+                android:layout_height="50dp"/>
+
+    <LinearLayout
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:layout_margin="20dp">
+
+
+        <EditText
+            android:id="@+id/thanks_msg"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:background="#00000000"
+            android:hint="Thank you message"
+            android:textColor="#727272"
+            android:textColorHint="#727272"
+            android:textSize="18sp"
+            android:gravity="bottom|center_horizontal"
+            android:paddingBottom="10dp"
+            android:maxLength="50"/>
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:background="#d6d6d6"/>
+        <View
+
+            android:layout_width="match_parent"
+            android:layout_height="1dp"/>
+
+        <LinearLayout
+            android:orientation="horizontal"
+            android:id="@+id/auto_view_lay"
+
+            android:layout_width="match_parent"
+            android:layout_height="50dp">
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <ImageView
+                android:gravity="bottom|center_horizontal"
+                android:layout_width="30dp"
+                android:layout_height="match_parent"
+                android:src="@drawable/search_3x"/>
+
+        <EditText
+            android:id="@+id/search_edit"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="#00000000"
+            android:hint="Who sent this book"
+            android:textColor="#727272"
+            android:textColorHint="#727272"
+            android:textSize="18sp"
+            android:gravity="bottom|center_horizontal"
+            android:paddingBottom="10dp"
+            android:maxLength="50"
+           />
+
+            <ProgressBar
+                android:id="@+id/progress_show"
+                android:layout_width="25dp"
+                android:layout_height="25dp"
+                android:layout_alignParentRight="true"
+                android:layout_centerVertical="true"
+                android:layout_marginRight="10dp"
+                android:visibility="gone"/>
+        </RelativeLayout>
+            </LinearLayout>
+
+
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:background="#d6d6d6"/>
+
+
+    </LinearLayout>
+
+
+
+
+
+            <ListView
+                android:id="@+id/taged_user_list"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:visibility="visible">
+
+            </ListView>
+
+
+            <LinearLayout
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="100dp"
+        android:weightSum="1"
+        android:gravity="center"
+        android:layout_marginRight="20dp"
+        android:layout_marginLeft="20dp">
+        <Button
+            android:id="@+id/btndone"
+            android:layout_weight=".4"
+            android:layout_width="0dp"
+            android:layout_height="50dp"
+            android:text="DONE"
+            android:textSize="18dp"
+            android:gravity="center"
+            android:background="@drawable/rectdone"
+            android:textColor="#ffffff"
+            android:textStyle="bold"/>
+        <View
+            android:layout_weight=".1"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"/>
+
+        <Button
+            android:id="@+id/btncancel"
+            android:layout_weight=".4"
+            android:layout_width="0dp"
+            android:layout_height="50dp"
+            android:text="CANCEL"
+            android:textSize="18dp"
+            android:gravity="center"
+            android:background="@drawable/rectcancel"
+            android:textColor="#b1413c"
+            android:textStyle="bold"/>
+
+
+
+    </LinearLayout>
+        </LinearLayout>
+    </ScrollView>
+
+</LinearLayout>

@@ -1,0 +1,140 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:id="@+id/linear"
+    android:weightSum="1"
+    android:orientation="vertical"
+    android:layout_gravity="center"
+    android:background="#9910FF">
+
+    <LinearLayout
+        android:id="@+id/animimglay"
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:visibility="visible">
+        <com.github.siyamed.shapeimageview.CircularImageView
+            android:id="@+id/user_profile_img1"
+            android:layout_gravity="center"
+            xmlns:app="http://schemas.android.com/apk/res-auto"
+            android:layout_marginTop="25dp"
+            android:layout_width="140dp"
+            android:layout_height="140dp"
+            app:siBorderWidth="2dp"
+            app:siBorderColor="@color/white"
+            android:src="@drawable/default_profile_picture"
+            />
+        </LinearLayout>
+
+    <LinearLayout
+        android:layout_weight=".250"
+        android:id="@+id/scrollLinerqq"
+        android:layout_width="fill_parent"
+        android:layout_height="0dp"
+        android:gravity="center"
+        android:orientation="vertical"
+        android:layout_marginRight="10dp"
+        android:layout_marginLeft="10dp"
+        >
+
+        <ImageView
+            android:id="@+id/log"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:src="@drawable/login_logo_3x"
+            android:layout_gravity="center"/>
+
+    </LinearLayout>
+
+
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="0dp"
+        android:layout_marginTop="5dp"
+        android:layout_weight=".610"
+        android:orientation="vertical">
+
+        <LinearLayout
+            android:id="@+id/scrollLiner"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:orientation="vertical"
+            android:layout_marginTop="10dp"
+            android:layout_marginRight="20dp"
+            android:layout_marginLeft="20dp">
+
+
+            <views.CustomTextViewThin
+                android:id="@+id/txt_username"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:hint="Welcome"
+                android:textColorHint="@color/white"
+                android:layout_gravity="center"
+                android:gravity="center"
+                android:textColor="@color/white"
+                android:textSize="23sp"/>
+            <LinearLayout
+                android:id="@+id/loggedin_lay"
+                android:orientation="vertical"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+            <views.CustomTextViewThin
+                android:id="@+id/txt_tap_login"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:hint="Tap to Login"
+                android:textColorHint="@color/white"
+                android:layout_gravity="center"
+                android:layout_marginTop="15dp"
+                android:gravity="center"
+                android:textColor="#99FFFFFF"
+                android:textSize="21sp"
+                android:text="Tap to Login"/>
+
+            <com.github.siyamed.shapeimageview.CircularImageView
+                android:id="@+id/user_profile_img"
+                android:layout_gravity="center"
+                xmlns:app="http://schemas.android.com/apk/res-auto"
+                android:layout_marginTop="25dp"
+                android:layout_width="140dp"
+                android:layout_height="140dp"
+                app:siBorderWidth="2dp"
+                app:siBorderColor="@color/white"
+                android:src="@drawable/default_profile_picture"
+                />
+</LinearLayout>
+        </LinearLayout>
+    </LinearLayout>
+
+    <RelativeLayout
+        android:layout_width="fill_parent"
+        android:layout_height="0dp"
+        android:layout_weight=".147"
+        android:gravity="center"
+        android:layout_alignParentBottom="true"
+        android:weightSum="4"
+        android:orientation="vertical">
+        <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent"
+            android:orientation="horizontal"
+            android:gravity="center">
+
+            <views.CustomTextViewThin
+                android:id="@+id/txt_remove_user"
+                android:layout_width="0dp"
+                android:layout_height="fill_parent"
+                android:layout_gravity="center"
+                android:layout_weight="1"
+                android:gravity="center"
+                android:textColor="#99FFFFFF"
+                android:textSize="20sp"
+                android:text="Logout"/>
+
+        </LinearLayout>
+    </RelativeLayout>
+</LinearLayout>

@@ -1,0 +1,69 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="@color/white"
+    android:clickable="true"
+    android:weightSum="1">
+
+
+
+    <LinearLayout
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:padding="10dp"
+        android:background="#8f2208"
+        android:layout_height="wrap_content">
+
+        <com.github.siyamed.shapeimageview.CircularImageView
+            xmlns:app="http://schemas.android.com/apk/res-auto"
+            android:id="@+id/user_profile_img"
+            android:layout_gravity="center"
+            android:layout_width="100dp"
+            android:layout_height="100dp"
+            app:siBorderWidth="2dp"
+            app:siBorderColor="@color/white"
+            android:src="@drawable/icon_profile_drawer_bg"
+            />
+
+            <views.CustomTextViewLight
+                android:id="@+id/txt_username"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:textColor="#e6e8eb"
+                android:layout_marginTop="5dp"
+                android:textSize="17sp"
+                android:gravity="center"
+                android:text="Mr Akash Tiwari"
+                android:padding="5dp"/>
+
+
+    </LinearLayout>
+
+
+
+    <LinearLayout
+        android:orientation="vertical"
+        android:layout_weight="1"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:weightSum="1"
+        android:background="#ffffff">
+
+        <android.support.v7.widget.RecyclerView
+            android:id="@+id/recentactivitylist"
+            android:layout_width="match_parent"
+            android:visibility="gone"
+            android:layout_height="match_parent"></android.support.v7.widget.RecyclerView>
+
+        <include layout="@layout/draweracivitieslistviewnew"
+            android:id="@+id/constantlist"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:visibility="visible"
+            />
+
+    </LinearLayout>
+</LinearLayout>

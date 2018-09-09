@@ -1,0 +1,315 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:weightSum="1"
+    android:background="#3699DB">
+
+    <RelativeLayout
+        android:id="@+id/heade_lay"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:background="#ffffff">
+
+        <ImageView
+            android:id="@+id/toread_back"
+            android:layout_width="25dp"
+            android:layout_height="25dp"
+            android:src="@drawable/back_arrow"
+            android:layout_alignParentLeft="true"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="10dp"/>
+
+        <views.CustomTextViewMedium
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Edit Group"
+            android:textSize="18dp"
+            android:textColor="#0f0f0f"
+            android:layout_toRightOf="@+id/toread_back"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="10dp"
+            />
+
+        <Button
+            android:id="@+id/edit_group"
+            android:layout_width="30dp"
+            android:layout_height="30dp"
+            android:gravity="center"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:layout_marginRight="10dp"
+            android:background="@drawable/right_mark_green_gp"/>
+
+    </RelativeLayout>
+
+    <ScrollView
+        android:id="@+id/scroll_lay"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+        <LinearLayout
+            android:orientation="vertical"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="200dp"
+                android:background="#ececec">
+
+
+                <com.github.siyamed.shapeimageview.RoundedImageView
+                    android:id="@+id/gp_img"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:src="@drawable/group_header_default"/>
+
+                <ImageView
+                    android:id="@+id/edit_img"
+                    android:layout_width="20dp"
+                    android:layout_height="20dp"
+                    android:src="@drawable/edit_group_pencil"
+                    android:layout_alignParentRight="true"
+                    android:layout_margin="10dp"/>
+
+        </RelativeLayout>
+
+
+
+            <LinearLayout
+                android:orientation="vertical"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="20dp"
+                android:layout_marginRight="20dp"
+                android:layout_marginTop="10dp">
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+                    <android.support.design.widget.TextInputLayout
+                        android:id="@+id/grp_name_input"
+                        android:layout_width="match_parent"
+                        android:layout_height="49dp"
+                        android:theme="@style/TextLabel">
+
+                    <EditText
+                        android:id="@+id/grp_name"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:background="@null"
+                        android:text=""
+                        android:hint="Group Name"
+                        android:textSize="16dp"
+                        android:inputType="text"
+                        android:gravity="center_vertical|bottom"
+                        android:maxLines="1"
+                        android:paddingBottom="5dp"
+                        android:paddingLeft="1dp"
+                        android:textColor="#ffffff"
+                        android:textColorHint="#0A4C8B"
+                        android:maxLength="60"
+                     />
+                    </android.support.design.widget.TextInputLayout>
+
+                    <View
+                        android:layout_below="@+id/grp_name_input"
+                        android:layout_width="match_parent"
+                        android:layout_height="1dp"
+                        android:background="#58ACE4"/>
+
+                </RelativeLayout>
+
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="10dp"/>
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="50dp">
+
+                    <android.support.design.widget.TextInputLayout
+                        android:id="@+id/grp_descrp_input"
+                        android:layout_width="match_parent"
+                        android:layout_height="49dp"
+                        android:theme="@style/TextLabel">
+                    <EditText
+                        android:id="@+id/grp_descrp"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:background="@null"
+                        android:text=""
+                        android:hint="Short Description"
+                        android:textSize="16dp"
+                        android:gravity="center_vertical|bottom"
+                        android:inputType="text"
+                        android:maxLines="2"
+                        android:paddingLeft="1dp"
+                        android:textColor="#ffffff"
+                        android:textColorHint="#0A4C8B"
+                        android:paddingBottom="5dp"
+                        android:maxLength="200"/>
+                    </android.support.design.widget.TextInputLayout>
+
+                    <View
+                        android:layout_below="@+id/grp_descrp_input"
+                        android:layout_width="match_parent"
+                        android:layout_height="1dp"
+                        android:background="#58ACE4"/>
+
+                </RelativeLayout>
+
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="20dp"/>
+
+                <HorizontalScrollView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:background="#ffffff"
+                    android:scrollbars="none"
+                    >
+
+                    <LinearLayout
+                        android:id="@+id/theamlay"
+                        android:orientation="horizontal"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:weightSum="1"
+                        android:padding="3dp">
+                    </LinearLayout>
+                </HorizontalScrollView>
+
+
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="10dp"/>
+
+
+                <LinearLayout
+                    android:orientation="horizontal"
+                    android:layout_width="match_parent"
+                    android:layout_height="40dp"
+                    android:weightSum="1"
+                    android:background="@drawable/creategroup_rect"
+                    android:padding="3dp"
+                    android:visibility="gone">
+
+                    <RelativeLayout
+                        android:id="@+id/open_gp_lay"
+                        android:layout_weight=".5"
+                        android:layout_width="0dp"
+                        android:layout_height="match_parent"
+                        android:gravity="center"
+                        android:background="#0A4C8B">
+
+                        <ImageView
+                            android:id="@+id/ic1"
+                            android:layout_width="20dp"
+                            android:layout_height="20dp"
+                            android:src="@drawable/close_group_ic"
+                            android:layout_centerVertical="true"/>
+
+                        <views.CustomTextViewMedium
+                            android:layout_toRightOf="@+id/ic1"
+                            android:layout_width="wrap_content"
+                            android:layout_height="match_parent"
+                            android:text="Open Group"
+                            android:textColor="#ffffff"
+                            android:textSize="16dp"
+                            android:layout_marginLeft="10dp"
+                            android:gravity="center"/>
+
+
+                    </RelativeLayout>
+
+                    <RelativeLayout
+                        android:id="@+id/closed_gp_lay"
+                        android:layout_weight=".5"
+                        android:layout_width="0dp"
+                        android:layout_height="match_parent"
+                        android:gravity="center"
+                        android:background="#3699DB">
+
+                        <ImageView
+                            android:id="@+id/ic2"
+                            android:layout_width="20dp"
+                            android:layout_height="20dp"
+                            android:src="@drawable/lock_white_ic"
+                            android:layout_centerVertical="true"/>
+
+                        <views.CustomTextViewMedium
+                            android:layout_toRightOf="@+id/ic2"
+                            android:layout_width="wrap_content"
+                            android:layout_height="match_parent"
+                            android:text="Closed Group"
+                            android:textColor="#ffffff"
+                            android:textSize="16dp"
+                            android:layout_marginLeft="10dp"
+                            android:gravity="center" />
+
+
+                    </RelativeLayout>
+
+
+                </LinearLayout>
+
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="20dp"/>
+
+                <RelativeLayout
+                    android:id="@+id/search_lay"
+                    android:layout_width="match_parent"
+                    android:layout_height="40dp"
+                    android:background="@drawable/rect_white">
+
+                    <ImageView
+                        android:id="@+id/search_btn"
+                        android:layout_width="25dp"
+                        android:layout_height="25dp"
+                        android:src="@drawable/search_light"
+                        android:layout_centerVertical="true"
+                        android:layout_marginLeft="10dp"/>
+
+                    <EditText
+                        android:id="@+id/search_txt"
+                        android:layout_toRightOf="@+id/search_btn"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:hint="Search people and add"
+                        android:textColor="#999897"
+                        android:background="#00000000"
+                        android:textColorHint="#999897"
+                        android:gravity="center_vertical"
+                        android:layout_marginLeft="10dp"
+                        android:textSize="16dp"
+                        android:maxLines="1"
+                        android:inputType="text"
+                        />
+
+                    <ProgressBar
+                        android:id="@+id/progress_show"
+                        android:layout_width="25dp"
+                        android:layout_height="25dp"
+                        android:layout_alignParentRight="true"
+                        android:layout_centerVertical="true"
+                        android:layout_marginRight="10dp"
+                        android:visibility="gone"/>
+
+                </RelativeLayout>
+
+
+                <ListView
+                    android:id="@+id/taged_user_list"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:visibility="visible"
+                    android:layout_marginTop="10dp"/>
+
+
+            </LinearLayout>
+        </LinearLayout>
+    </ScrollView>
+</LinearLayout>

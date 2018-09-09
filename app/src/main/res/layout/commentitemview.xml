@@ -1,0 +1,133 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="#ebebeb"
+    android:layout_marginBottom="1dp">
+
+
+
+    <LinearLayout
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:weightSum="1"
+      >
+
+        <LinearLayout
+            xmlns:app="http://schemas.android.com/tools"
+            android:orientation="horizontal"
+            android:layout_weight=".2"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal|top"
+            android:padding="5dp"
+            android:gravity="center_horizontal|top">
+
+            <com.github.siyamed.shapeimageview.RoundedImageView
+                android:id="@+id/nominatorimg"
+                android:layout_width="45dp"
+                android:layout_height="45dp"
+                android:src="@drawable/default_square_user"
+                android:layout_gravity="center_horizontal|top"
+                app:siBorderWidth="3dp"
+                app:siBorderColor="@color/white"
+                />
+        </LinearLayout>
+
+
+        <LinearLayout
+            android:layout_weight=".8"
+            android:orientation="vertical"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:weightSum="1">
+
+            <RelativeLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content">
+
+            <RelativeLayout
+                android:id="@+id/name_deg_lay"
+                android:layout_width="wrap_content"
+                android:layout_height="50dp"
+                android:layout_alignParentLeft="true"
+                android:layout_toLeftOf="@+id/tag_lay">
+
+             <TextView
+                android:id="@+id/username"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="asfdsgshg"
+                android:textColor="#474747"
+                android:textSize="14sp"
+                android:ellipsize="start"
+                android:padding="1dp"
+                android:textStyle="bold"
+                />
+
+            <TextView
+                android:layout_below="@+id/username"
+                android:id="@+id/datetxt"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="SFdf"
+                android:textColor="#676767"
+                android:textSize="14sp"
+                android:padding="1dp"
+                />
+
+            </RelativeLayout>
+
+                <FrameLayout
+                   android:id="@+id/tag_lay"
+                   android:layout_alignParentRight="true"
+                    android:layout_width="30dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginRight="10dp"
+                    android:layout_marginTop="15dp">
+
+                    <ImageView
+                        android:id="@+id/tagicon"
+                        android:layout_width="30dp"
+                        android:layout_height="20dp"
+                        android:src="@drawable/tag_icon"
+                        android:layout_marginTop="5dp"
+                        />
+
+                    <TextView
+                        android:id="@+id/tagcount_txt"
+                        android:layout_width="15dp"
+                        android:layout_height="15dp"
+                        android:text="10"
+                        android:textColor="#e5e5e5"
+                        android:layout_gravity="right|top"
+                        android:gravity="center"
+                        android:textStyle="bold"
+                        android:textSize="10sp"
+                        android:background="@drawable/redcircle"
+                        android:visibility="visible"/>
+                </FrameLayout>
+
+
+
+            </RelativeLayout>
+
+            <TextView
+                android:id="@+id/commentstxt"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="asfdsgshg"
+                android:textColor="#575757"
+                android:textSize="14sp"
+                android:padding="5dp"
+                />
+        </LinearLayout>
+    </LinearLayout>
+    <!--<LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:background="#979797"
+        android:padding="5dp"></LinearLayout>-->
+</LinearLayout>

@@ -1,0 +1,249 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="#3498DB">
+
+        <LinearLayout
+            android:orientation="vertical"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="170dp">
+
+            <com.github.siyamed.shapeimageview.RoundedImageView
+                android:id="@+id/gp_img"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:src="@drawable/group_header_default"/>
+
+                <ImageView
+                    android:id="@+id/back_img"
+                    android:layout_width="20dp"
+                    android:layout_height="20dp"
+                    android:src="@drawable/back_arrow"
+                    android:layout_alignParentLeft="true"
+                    android:layout_margin="10dp"/>
+
+                <ImageView
+                    android:id="@+id/edit_img"
+                    android:layout_width="20dp"
+                    android:layout_height="20dp"
+                    android:src="@drawable/edit_group_pencil"
+                    android:layout_alignParentRight="true"
+                    android:layout_margin="10dp"/>
+
+            </RelativeLayout>
+
+
+
+
+            <LinearLayout
+                android:orientation="vertical"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:padding="10dp">
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:background="@drawable/rect_white"
+                    android:padding="10dp"
+                    android:layout_gravity="center_vertical"
+                    android:gravity="center_vertical">
+
+                    <views.CustomTextViewMedium
+                        android:id="@+id/gp_name"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Tata Power Energy Club"
+                        android:textSize="14sp"
+                        android:textColor="#D35400"
+                        />
+
+                    <views.CustomTextViewRegular
+                        android:layout_below="@+id/gp_name"
+                        android:id="@+id/gp_descp"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Club Enerji also announced the champions of the National Energy Quize 2016."
+                        android:textSize="12sp"
+                        android:layout_marginTop="0dp"
+                        android:textColor="#8C9293"
+                        />
+
+                </RelativeLayout>
+
+                <RelativeLayout
+                    android:id="@+id/pendinglist_lay"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:background="@drawable/rect_white"
+                    android:padding="10dp"
+                    android:layout_marginTop="5dp">
+
+
+                <RelativeLayout
+                    android:id="@+id/lay1"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:background="@drawable/rect_white"
+                    >
+
+                    <ImageView
+                        android:id="@+id/up_down_arrow"
+                        android:layout_width="20dp"
+                        android:layout_height="20dp"
+                        android:layout_alignParentLeft="true"
+                        android:src="@drawable/arrow_up_gp"
+                        android:layout_centerVertical="true"
+                        />
+
+                    <views.CustomTextViewMedium
+                        android:id="@+id/pending_txt"
+                        android:layout_toRightOf="@+id/up_down_arrow"
+                        android:layout_toLeftOf="@+id/pending_count"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Pending Request"
+                        android:textSize="12sp"
+                        android:textColor="#D35400"
+                        android:layout_marginLeft="10dp"
+                        android:layout_centerVertical="true"
+                        />
+
+                    <views.CustomTextViewMedium
+                       android:id="@+id/pending_count"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="0"
+                        android:textSize="10sp"
+                        android:textColor="#ffffff"
+                        android:layout_marginLeft="5dp"
+                        android:layout_marginRight="5dp"
+                        android:layout_alignParentRight="true"
+                        android:background="@drawable/gpinfo_circle"
+                        android:gravity="center"
+                        android:padding="5dp"
+                        android:layout_centerVertical="true"
+                        />
+
+                </RelativeLayout>
+
+                    <RelativeLayout
+                        android:id="@+id/pendlist_lay"
+                        android:layout_below="@+id/lay1"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="10dp"
+                        android:visibility="gone">
+
+                        <View
+                            android:id="@+id/line_view"
+                            android:layout_width="match_parent"
+                            android:layout_height="1dp"
+                            android:background="#dcdcdc"/>
+
+                        <ListView
+                            android:layout_below="@+id/line_view"
+                            android:id="@+id/pendinguser_list"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"></ListView>
+
+                    </RelativeLayout>
+
+                </RelativeLayout>
+
+
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:background="@drawable/rect_white"
+                    android:padding="10dp"
+                    android:layout_marginTop="5dp">
+
+
+                    <RelativeLayout
+                        android:id="@+id/lay2"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:background="@drawable/rect_white">
+
+                        <ImageView
+                            android:id="@+id/memberc_ic"
+                            android:layout_width="15dp"
+                            android:layout_height="15dp"
+                            android:layout_alignParentLeft="true"
+                            android:src="@drawable/member_count_ic"
+                            android:layout_centerVertical="true"
+                            />
+
+                        <views.CustomTextViewMedium
+                            android:id="@+id/count_txt"
+                            android:layout_toRightOf="@+id/memberc_ic"
+                            android:layout_toLeftOf="@+id/add_user_ic"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="220"
+                            android:textSize="12sp"
+                            android:textColor="#D35400"
+                            android:layout_marginLeft="10dp"
+                            android:layout_centerVertical="true"
+                            />
+
+                        <ImageView
+                            android:id="@+id/add_user_ic"
+                            android:layout_width="30dp"
+                            android:layout_height="30dp"
+                            android:text="20"
+                            android:textSize="10sp"
+                            android:layout_marginLeft="5dp"
+                            android:layout_marginRight="5dp"
+                            android:layout_alignParentRight="true"
+                            android:gravity="center"
+                            android:src="@drawable/add_member"
+                            />
+
+                    </RelativeLayout>
+
+                    <RelativeLayout
+                        android:id="@+id/gpuserlist_lay"
+                        android:layout_below="@+id/lay2"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="10dp"
+                        android:visibility="visible">
+
+                        <View
+                            android:id="@+id/line_view1"
+                            android:layout_width="match_parent"
+                            android:layout_height="1dp"
+                            android:background="#dcdcdc"/>
+
+                        <ListView
+                            android:layout_below="@+id/line_view1"
+                            android:id="@+id/gpuser_list"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"></ListView>
+
+                    </RelativeLayout>
+
+                </RelativeLayout>
+
+
+            </LinearLayout>
+
+        </LinearLayout>
+
+    </ScrollView>
+
+</LinearLayout>

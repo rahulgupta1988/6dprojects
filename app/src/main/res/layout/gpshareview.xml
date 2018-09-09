@@ -1,0 +1,419 @@
+<LinearLayout
+    android:id="@+id/parentlay"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:weightSum="1">
+
+    <LinearLayout
+        android:layout_weight=".75"
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="0dp">
+
+        <RelativeLayout
+            android:orientation="horizontal"
+            android:layout_width="match_parent"
+            android:layout_height="50dp">
+
+            <ImageView
+                android:id="@+id/cancelshare"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:src="@drawable/back_arrow"
+                android:padding="13dp"
+                android:layout_gravity="center"
+                android:layout_alignParentLeft="true"
+                />
+
+            <views.CustomTextViewRegular
+                android:id="@+id/title"
+                android:layout_toRightOf="@+id/cancelshare"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:text="Share an Update"
+                android:textColor="@color/black"
+                android:gravity="center_vertical"
+                android:textSize="18dp"
+                android:layout_marginLeft="15dp"/>
+
+            <TextView
+                android:id="@+id/sharebtn"
+                android:layout_width="70dp"
+                android:layout_height="match_parent"
+                android:text="POST"
+                android:textColor="#ffffff"
+                android:textSize="14dp"
+                android:textStyle="bold"
+                android:background="@drawable/rectshareforrecopost"
+                android:textAllCaps="true"
+                android:gravity="center"
+                android:layout_alignParentRight="true"
+                android:layout_margin="8dp"/>
+
+        </RelativeLayout>
+
+
+
+        <LinearLayout
+            android:orientation="horizontal"
+            android:layout_width="match_parent"
+            android:layout_height="2dp"
+            android:background="#e2e2e2"
+            android:visibility="visible"/>
+
+        <ScrollView
+            android:id="@+id/regScroll"
+            android:isScrollContainer="false"
+            android:layout_width="match_parent"
+            android:fillViewport="true"
+            android:layout_height="wrap_content"
+            android:fadeScrollbars="false">
+
+
+
+            <LinearLayout
+                android:layout_width="fill_parent"
+                android:layout_height="match_parent"
+                android:orientation="vertical"
+                android:layout_marginTop="10dp"
+                android:paddingRight="15dp"
+                android:paddingLeft="15dp">
+
+
+                <LinearLayout
+                    android:id="@+id/final_ll"
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical">
+
+                    <LinearLayout
+                        android:id="@+id/first_ll"
+                        android:layout_width="fill_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="vertical"
+                        android:visibility="visible">
+
+                        <LinearLayout
+                            android:layout_width="fill_parent"
+                            android:layout_height="wrap_content"
+                            android:orientation="horizontal">
+
+                            <ImageView
+                                android:id="@+id/emojiicon"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:src="@drawable/emoji_smile"
+                                android:layout_gravity="center"
+                                android:visibility="visible"/>
+
+                            <ImageView
+                                android:id="@+id/keyicon"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:src="@drawable/icon_keyboard"
+                                android:layout_gravity="center"
+                                android:visibility="gone"/>
+
+                            <views.CustomEditTextView
+                                android:id="@+id/sharetxt"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:hint="What's on your mind?"
+                                android:layout_gravity="center_vertical"
+                                android:gravity="center_vertical"
+                                android:drawablePadding="10dp"
+                                android:textColor="#99000000"
+                                android:textColorHint="#99000000"
+                                android:textSize="17dp"
+                                android:inputType="textMultiLine"
+                                android:autoLink="web"
+                                android:maxLines="5"
+                                android:scrollbars="vertical"
+                                />
+
+                        </LinearLayout>
+
+                        <LinearLayout
+                            android:id="@+id/jeo_tagging_ll"
+                            android:layout_width="fill_parent"
+                            android:layout_height="wrap_content"
+                            android:orientation="vertical">
+
+                            <views.CustomTextViewRegular
+                                android:id="@+id/location_place_txt"
+                                android:layout_height="wrap_content"
+                                android:layout_width="wrap_content"
+                                android:layout_marginLeft="30dp"
+                                android:text="- at "
+                                android:textColor="#366bff"
+                                android:gravity="center|left"
+                                android:textSize="15dp"/>
+                        </LinearLayout>
+
+
+                        <LinearLayout
+                            android:id="@+id/xpressway_subject_ll"
+                            android:layout_width="fill_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginTop="15dp"
+                            android:orientation="vertical"
+                            android:visibility="visible">
+
+                            <views.CustomEditTextView
+                                android:id="@+id/xwaysubject"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:hint="*Please enter subject"
+                                android:layout_gravity="center_vertical"
+                                android:gravity="center_vertical"
+                                android:textColor="#99000000"
+                                android:textColorHint="#99000000"
+                                android:textSize="17dp"
+                                android:maxLength="44"
+                                />
+                        </LinearLayout>
+
+                        <LinearLayout
+                            android:id="@+id/bulletin_show_ll"
+                            android:layout_width="fill_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginTop="20dp"
+                            android:orientation="horizontal"
+                            android:visibility="visible">
+
+
+                            <CheckBox
+                                android:id="@+id/CbTermAndServicesCheckBox"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:button="@drawable/checkbox_selector"
+                                android:layout_marginRight="5dp"/>
+
+
+                            <views.CustomTextViewRegular
+                                android:id="@+id/signing_agree_txt11"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:text="Send link in email (Xpress Bulletin)"
+                                android:contentDescription="@null"
+                                android:textColor="#CC000000"
+                                android:gravity="center"
+                                android:textSize="15sp"/>
+
+                        </LinearLayout>
+
+
+                        <LinearLayout
+                            android:id="@+id/xpress_bulletin_ll"
+                            android:layout_width="fill_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginTop="10dp"
+                            android:orientation="vertical">
+                            <!--
+                                                <views.CustomEditTextView
+                                                    android:layout_width="match_parent"
+                                                    android:layout_height="wrap_content"
+                                                    android:paddingLeft="20dp"
+                                                    android:hint="To:"
+                                                    android:layout_gravity="center_vertical"
+                                                    android:gravity="center_vertical"
+                                                    android:textColor="#a3a3a3"
+                                                    android:textColorHint="#99000000"
+                                                    android:textSize="17dp"
+                                                    />-->
+
+
+
+                            <ListView
+                                android:padding="5dp"
+                                android:id="@+id/seltoorcc"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:visibility="visible"></ListView>
+
+                            <LinearLayout
+                                android:orientation="horizontal"
+                                android:id="@+id/searchlay"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content">
+
+                            </LinearLayout>
+
+
+                            <views.CustomTextViewRegular
+                                android:layout_height="wrap_content"
+                                android:layout_width="match_parent"
+                                android:text="Category"
+                                android:textColor="#99000000"
+                                android:gravity="center_vertical"
+                                android:textSize="15dp"
+                                android:visibility="gone"/>
+
+                            <views.CustomEditTextView
+                                android:id="@+id/select_category"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:hint="Please Select Category"
+                                android:layout_gravity="center_vertical"
+                                android:gravity="center_vertical"
+                                android:drawableRight="@drawable/dropdown_arrow"
+                                android:textColor="#CC000000"
+                                android:textColorHint="#CC000000"
+                                android:textSize="17dp"
+                                android:focusable="false"
+
+                                />
+
+                        </LinearLayout>
+
+
+                        <!--  <LinearLayout
+                              android:id="@+id/linklay"
+                              android:layout_width="match_parent"
+                              android:layout_height="match_parent"
+                              android:gravity="center_horizontal|bottom"
+                              android:layout_marginTop="10dp"
+                              android:visibility="visible">-->
+                        <LinearLayout
+                            android:id="@+id/linklay"
+                            android:layout_width="fill_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginTop="20dp"
+                            android:orientation="vertical"
+                            android:background="#cac8c8"
+                            android:visibility="gone">
+                            <FrameLayout
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content">
+                                <TextView
+                                    android:id="@+id/videodoclink"
+                                    android:gravity="center|left"
+                                    android:layout_width="match_parent"
+                                    android:layout_height="50dp"
+                                    android:layout_gravity="center"
+                                    android:textSize="16sp"
+                                    android:text=""
+                                    android:padding="5dp"/>
+
+                                <ImageView
+                                    android:id="@+id/cancelattachment"
+                                    android:layout_width="30dp"
+                                    android:layout_height="30dp"
+                                    android:src="@drawable/cancel"
+                                    android:layout_gravity="center_vertical|right"
+                                    android:layout_marginRight="5dp"
+                                    />
+
+                            </FrameLayout>
+                        </LinearLayout>
+
+
+                    </LinearLayout>
+
+
+
+                    <!--    </ScrollView>-->
+                </LinearLayout>
+
+            </LinearLayout>
+        </ScrollView>
+
+
+
+    </LinearLayout>
+
+
+    <LinearLayout
+        android:layout_weight=".25"
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:gravity="center"
+        android:weightSum="1"
+        android:layout_gravity="center">
+
+
+
+        <LinearLayout
+            android:id="@+id/views_lay"
+            android:layout_width="match_parent"
+            android:layout_height="65dp"
+            android:gravity="center"
+            android:layout_gravity="center">
+
+            <ImageView
+                android:id="@+id/cameraimg"
+                android:layout_width="50dp"
+                android:layout_height="50dp"
+                android:src="@drawable/pic_img"
+                android:layout_marginLeft="10dp"
+                />
+
+            <ImageView
+                android:id="@+id/videoimg"
+                android:layout_width="50dp"
+                android:layout_height="50dp"
+                android:src="@drawable/video_img"
+                android:layout_marginLeft="10dp"
+                />
+
+            <ImageView
+                android:id="@+id/documentimg"
+                android:layout_width="50dp"
+                android:layout_height="50dp"
+                android:src="@drawable/doc_img"
+                android:visibility="visible"
+                android:layout_marginLeft="10dp"
+                />
+
+            <ImageView
+                android:id="@+id/jeo_tagging"
+                android:layout_width="50dp"
+                android:layout_height="50dp"
+                android:src="@drawable/checkin_tagging_disable"
+                android:layout_marginLeft="10dp"
+                />
+
+            <FrameLayout
+                android:layout_width="50dp"
+                android:layout_height="60dp"
+                android:layout_marginLeft="10dp"
+                android:layout_gravity="top">
+
+                <ImageView
+                    android:layout_toRightOf="@+id/documentimg"
+                    android:id="@+id/tagicon"
+                    android:layout_width="50dp"
+                    android:layout_height="50dp"
+                    android:src="@drawable/tag_icon"
+                    android:layout_marginTop="5dp"
+                    />
+
+                <TextView
+                    android:id="@+id/tagcount_txt"
+                    android:layout_width="20dp"
+                    android:layout_height="20dp"
+                    android:text="10"
+                    android:textColor="#e5e5e5"
+                    android:layout_gravity="right|top"
+                    android:gravity="center"
+                    android:textStyle="bold"
+                    android:textSize="12sp"
+                    android:background="@drawable/redcircle"
+                    android:visibility="visible"/>
+            </FrameLayout>
+        </LinearLayout>
+
+        <ImageView
+            android:id="@+id/xpwayimg"
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:src="@drawable/xw_img"
+            android:visibility="visible"
+            />
+
+    </LinearLayout>
+
+</LinearLayout>

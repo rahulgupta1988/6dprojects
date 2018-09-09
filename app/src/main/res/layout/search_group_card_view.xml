@@ -1,0 +1,156 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    android:orientation="vertical"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/card_view"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:padding="5dp"
+    android:background="#f1f1f1">
+
+    <LinearLayout
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+
+        <ImageView
+            android:id="@+id/gp_photo"
+            android:layout_width="wrap_content"
+            android:layout_height="100dp"
+            android:contentDescription="@string/action_settings"
+            android:src="@drawable/group_icon_default"
+            android:scaleType="centerCrop"
+            android:background="@drawable/rectshape"/>
+
+
+
+        <View
+            android:id="@+id/color_line"
+            android:layout_width="match_parent"
+            android:layout_height="8dp"
+            android:background="#871092"/>
+        <LinearLayout
+            android:orientation="vertical"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="#ffffff"
+            android:padding="5dp">
+
+
+
+            <views.CustomTextViewMedium
+                android:id="@+id/group_name"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textSize="14sp"
+                android:text="Test Card"
+                android:textColor="#000000"
+                android:gravity="center_vertical"
+                android:paddingLeft="5dp"
+                />
+
+            <RelativeLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:paddingLeft="2dp"
+                android:gravity="center_vertical"
+                android:layout_gravity="center_vertical"
+                android:layout_marginTop="3dp">
+
+                <RelativeLayout
+                    android:id="@+id/member_countlay"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content">
+                    <ImageView
+                        android:layout_width="15dp"
+                        android:layout_height="15dp"
+                        android:src="@drawable/member_count_ic"
+                        android:paddingTop="3dp"/>
+
+                    <views.CustomTextViewMedium
+                        android:layout_marginLeft="15dp"
+                        android:id="@+id/member_count"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:textSize="14sp"
+                        android:text="124"
+                        android:textColor="#9c9c9c"
+                        android:gravity="center_vertical"
+                        android:layout_centerVertical="true"/>
+
+                </RelativeLayout>
+
+
+                <RelativeLayout
+                    android:layout_toRightOf="@+id/member_countlay"
+                    android:id="@+id/post_countlay"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="10dp">
+                    <ImageView
+                        android:layout_width="15dp"
+                        android:layout_height="15dp"
+                        android:src="@drawable/post_count_ic"
+                        android:paddingTop="3dp"/>
+
+                    <views.CustomTextViewMedium
+                        android:layout_marginLeft="15dp"
+                        android:id="@+id/post_count"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:textSize="14sp"
+                        android:text="124"
+                        android:textColor="#9c9c9c"
+                        android:gravity="center_vertical"
+                        android:layout_centerVertical="true"/>
+
+                </RelativeLayout>
+
+
+                <ImageView
+                    android:id="@+id/isprivate_lock"
+                    android:layout_width="15dp"
+                    android:layout_height="15dp"
+                    android:layout_centerVertical="true"
+                    android:src="@drawable/lock_private"
+                    android:layout_alignParentRight="true"
+                    android:visibility="gone"
+                    android:layout_marginRight="5dp"/>
+            </RelativeLayout>
+
+        </LinearLayout>
+
+        <RelativeLayout
+            android:id="@+id/btn_lay"
+            android:layout_width="match_parent"
+            android:layout_height="40dp"
+            android:background="@drawable/groupcarrect"
+            android:layout_gravity="center"
+            android:gravity="center"
+            android:visibility="gone">
+
+             <ImageView
+                 android:id="@+id/gp_type_ic"
+                 android:layout_width="15dp"
+                 android:layout_height="match_parent"
+                 android:layout_centerVertical="true"
+                 android:src="@drawable/lock_private"
+                 />
+
+            <views.CustomTextViewMedium
+                android:layout_toRightOf="@+id/gp_type_ic"
+                android:id="@+id/btn_txt"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:textSize="16sp"
+                android:text="Join"
+                android:textColor="#ffffff"
+                android:gravity="center"
+                android:layout_marginLeft="5dp"
+                />
+            </RelativeLayout>
+
+    </LinearLayout>
+
+</LinearLayout>

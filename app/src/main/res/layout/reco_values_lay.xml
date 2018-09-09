@@ -1,0 +1,207 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="150dp"
+    android:weightSum="1">
+
+    <LinearLayout
+        android:orientation="horizontal"
+        android:layout_weight=".5"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:weightSum=".9">
+
+        <LinearLayout
+            android:id="@+id/sefty_lay"
+            android:orientation="vertical"
+            android:layout_weight=".3"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_margin="5dp"
+            android:weightSum="1">
+
+            <ImageView
+                android:id="@+id/sefty_icon"
+                android:layout_weight=".6"
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:src="@drawable/safety"
+                android:layout_gravity="center"/>
+
+            <TextView
+                android:id="@+id/sefty_txt"
+                android:layout_weight=".4"
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:text="Safety"
+                android:gravity="center"
+                android:textStyle="bold"
+                android:textSize="14sp"/>
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/ethic_lay"
+            android:orientation="vertical"
+            android:layout_weight=".3"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_margin="5dp"
+            android:weightSum="1">
+
+            <ImageView
+                android:id="@+id/ethic_icon"
+                android:layout_weight=".6"
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:src="@drawable/ethic"
+                android:layout_gravity="center"
+                />
+
+            <TextView
+                android:id="@+id/ethic_txt"
+                android:layout_weight=".4"
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:text="Ethic"
+                android:gravity="center"
+                android:textStyle="bold"
+                android:textSize="14sp"/>
+
+        </LinearLayout>
+
+
+        <LinearLayout
+            android:id="@+id/agility_lay"
+            android:orientation="vertical"
+            android:layout_weight=".3"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_margin="5dp"
+            android:weightSum="1">
+
+            <ImageView
+                android:id="@+id/agility_icon"
+                android:layout_weight=".6"
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:src="@drawable/agility"
+                android:layout_gravity="center"/>
+
+            <TextView
+                android:id="@+id/agility_txt"
+                android:layout_weight=".4"
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:text="Agility"
+                android:gravity="center"
+                android:textStyle="bold"
+                android:textSize="14sp"/>
+
+        </LinearLayout>
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:orientation="horizontal"
+        android:layout_weight=".5"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:weightSum=".9"
+        android:layout_marginTop="10dp">
+
+        <LinearLayout
+            android:id="@+id/respect_lay"
+            android:orientation="vertical"
+            android:layout_weight=".3"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_margin="5dp"
+            android:weightSum="1"
+            >
+
+            <ImageView
+                android:id="@+id/respect_icon"
+                android:layout_weight=".6"
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:src="@drawable/respect"
+                android:layout_gravity="center"/>
+
+            <TextView
+                android:id="@+id/respect_txt"
+                android:layout_weight=".4"
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:text="Respect"
+                android:gravity="center"
+                android:textStyle="bold"
+                android:textSize="14sp"/>
+
+        </LinearLayout>
+
+
+        <LinearLayout
+            android:id="@+id/diligence_lay"
+            android:orientation="vertical"
+            android:layout_weight=".3"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_margin="5dp"
+            android:weightSum="1">
+
+            <ImageView
+                android:id="@+id/diligence_icon"
+                android:layout_weight=".6"
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:src="@drawable/diligence"
+                android:layout_gravity="center"/>
+
+            <TextView
+                android:id="@+id/diligence_txt"
+                android:layout_weight=".4"
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:text="Diligence"
+                android:gravity="center"
+                android:textStyle="bold"
+                android:textSize="14sp"/>
+
+        </LinearLayout>
+
+
+        <LinearLayout
+            android:id="@+id/care_lay"
+            android:orientation="vertical"
+            android:layout_weight=".3"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_margin="5dp"
+            android:weightSum="1">
+
+            <ImageView
+                android:id="@+id/care_icon"
+                android:layout_weight=".6"
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:src="@drawable/care"
+                android:layout_gravity="center"/>
+
+            <TextView
+                android:id="@+id/care_txt"
+                android:layout_weight=".4"
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:text="Care"
+                android:gravity="center"
+                android:textStyle="bold"
+                android:textSize="14sp"/>
+
+        </LinearLayout>
+
+
+    </LinearLayout>
+
+</LinearLayout>

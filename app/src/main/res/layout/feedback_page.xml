@@ -1,0 +1,214 @@
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/linear"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <LinearLayout
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="50dp">
+
+        <ImageView
+            android:id="@+id/cancelshare"
+            android:layout_weight=".15"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:src="@drawable/back_arrow"
+            android:padding="13dp"
+            />
+
+        <views.CustomTextViewRegular
+            android:layout_weight=".85"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:text="Feedback"
+            android:textColor="@color/black"
+            android:gravity="center_vertical"
+            android:textSize="18dp"/>
+
+    </LinearLayout>
+
+
+    <RelativeLayout
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center|top"
+        android:orientation="vertical">
+
+
+        <ImageView android:layout_gravity="center_horizontal"
+            android:layout_width="fill_parent"
+            android:layout_height="135dp"
+            android:scaleType="centerCrop"
+            android:id="@+id/photo"
+            android:src="@drawable/feedback_banner"
+            />
+
+    </RelativeLayout>
+
+
+    <ScrollView
+        android:id="@+id/regScroll"
+        android:isScrollContainer="false"
+        android:layout_width="fill_parent"
+        android:fillViewport="true"
+        android:layout_height="0dp"
+        android:layout_weight="1">
+
+
+
+        <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+
+            <LinearLayout
+                android:id="@+id/final_ll"
+                android:layout_width="fill_parent"
+                android:layout_weight="1"
+                android:layout_marginTop="10dp"
+                android:layout_height="wrap_content"
+                android:orientation="vertical">
+
+                <LinearLayout
+                    android:id="@+id/first_ll"
+                    android:layout_width="fill_parent"
+                    android:layout_weight="1"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical"
+                    android:layout_marginLeft="15dp"
+                    android:layout_marginRight="15dp"
+                    android:visibility="visible">
+
+<!--
+                    <LinearLayout
+                        android:id="@+id/xpress_bulletin_ll"
+                        android:layout_width="fill_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="10dp"
+                        android:orientation="vertical">
+                        <views.CustomTextViewLight
+                            android:layout_height="wrap_content"
+                            android:layout_width="match_parent"
+                            android:text="Hi"
+                            android:textColor="@color/black"
+                            android:gravity="center|left"
+                            android:textSize="18dp"/>
+
+                    </LinearLayout>-->
+
+                    <LinearLayout
+                        android:layout_width="fill_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="10dp"
+                        android:orientation="vertical">
+
+                        <views.CustomTextViewRegular
+                            android:layout_height="wrap_content"
+                            android:layout_width="match_parent"
+                            android:text="Name"
+                            android:textColor="#CC000000"
+                            android:gravity="center|left"
+                            android:textSize="18dp"/>
+
+                        <views.CustomTextViewRegular
+                            android:id="@+id/feedback_name"
+                            android:layout_height="wrap_content"
+                            android:layout_width="match_parent"
+                            android:text=""
+                            android:layout_marginTop="5dp"
+                            android:textColor="#A6000000"
+                            android:gravity="center|left"
+                            android:textSize="16dp"/>
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="fill_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="20dp"
+                        android:orientation="vertical">
+
+                        <views.CustomTextViewRegular
+                            android:layout_height="wrap_content"
+                            android:layout_width="match_parent"
+                            android:text="Email"
+                            android:textColor="#CC000000"
+                            android:gravity="center|left"
+                            android:textSize="18dp"/>
+
+                        <views.CustomTextViewRegular
+                            android:id="@+id/feedback_email"
+                            android:layout_height="wrap_content"
+                            android:layout_width="match_parent"
+                            android:text=""
+                            android:layout_marginTop="5dp"
+                            android:textColor="#A6000000"
+                            android:gravity="center|left"
+                            android:textSize="16dp"/>
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="fill_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="20dp"
+                        android:orientation="vertical">
+
+                        <views.CustomTextViewRegular
+                            android:layout_height="wrap_content"
+                            android:layout_width="match_parent"
+                            android:text="Feedback"
+                            android:textColor="#CC000000"
+                            android:gravity="center|left"
+                            android:textSize="18dp"/>
+
+                        <views.CustomEditTextView
+                            android:id="@+id/feedback_comment"
+                            android:layout_width="match_parent"
+                            android:layout_marginTop="5dp"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="center|left"
+                            android:gravity="center|left"
+                            android:hint="Please enter your feedback"
+                            android:textColor="#A6000000"
+                            android:textColorHint="#A6000000"
+                            android:textSize="16dp"
+                            />
+                    </LinearLayout>
+
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="25dp"
+                        android:layout_marginBottom="10dp"
+                        android:gravity="center">
+
+
+                        <ImageButton
+                            android:id="@+id/submmit_btn"
+                            android:layout_width="70dp"
+                            android:layout_height="70dp"
+                            android:background="@drawable/arrow_blue"
+                            android:text="Login"
+                            android:textColor="@color/button_color"
+                            android:textSize="18sp"
+                            android:textAllCaps="false"
+
+                            />
+
+                    </LinearLayout>
+
+                </LinearLayout>
+
+
+
+                <!--    </ScrollView>-->
+            </LinearLayout>
+
+        </LinearLayout>
+    </ScrollView>
+
+</LinearLayout>

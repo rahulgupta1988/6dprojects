@@ -1,0 +1,171 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:weightSum="1"
+    android:background="#255AE8">
+
+    <RelativeLayout
+        android:layout_weight=".08"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:background="#ffffff">
+
+        <ImageView
+            android:id="@+id/toread_back"
+            android:layout_width="25dp"
+            android:layout_height="25dp"
+            android:src="@drawable/back_arrow"
+            android:layout_alignParentLeft="true"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="10dp"/>
+
+         <views.CustomTextViewMedium
+             android:layout_width="wrap_content"
+             android:layout_height="wrap_content"
+             android:text="To Read"
+             android:textSize="16dp"
+             android:textColor="#0f0f0f"
+             android:layout_toRightOf="@+id/toread_back"
+             android:layout_centerVertical="true"
+             android:layout_marginLeft="10dp"
+             />
+
+        <ImageView
+            android:id="@+id/add_book"
+            android:layout_width="30dp"
+            android:layout_height="30dp"
+            android:src="@drawable/add_book_btn"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:layout_marginRight="10dp"/>
+
+    </RelativeLayout>
+
+    <LinearLayout
+        android:orientation="vertical"
+        android:layout_weight=".92"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="10dp"
+        android:layout_marginTop="10dp"
+        android:weightSum="1">
+
+        <views.CustomTextViewMedium
+            android:layout_weight=".07"
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:text="Books Trending"
+            android:textColor="#ffffff"
+            android:gravity="center_vertical"
+            android:textSize="16dp"
+            android:visibility="gone"/>
+
+
+        <android.support.v7.widget.RecyclerView
+            android:layout_weight=".33"
+            android:id="@+id/trendbooks_list"
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:visibility="gone"
+            ></android.support.v7.widget.RecyclerView>
+
+
+        <LinearLayout
+            android:orientation="vertical"
+            android:layout_weight="1"
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:background="@drawable/recangularcorner"
+            android:weightSum="1"
+            android:padding="10dp"
+           >
+
+            <LinearLayout
+                android:orientation="horizontal"
+                android:layout_weight=".08"
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:weightSum="1"
+                android:background="@drawable/toread_tab_draw"
+                android:padding="3dp">
+
+                 <Button
+                     android:layout_weight=".5"
+                     android:id="@+id/wish_btn"
+                     android:layout_width="0dp"
+                     android:layout_height="match_parent"
+                     android:background="#255AE8"
+                     android:text="Books - Wishlist"
+                     android:textSize="14dp"
+                     android:gravity="center"
+                     android:textColor="#ffffff"
+                     />
+
+                <Button
+                    android:layout_weight=".5"
+                    android:id="@+id/receive_btn"
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:background="#ffffff"
+                    android:text="Books - Received"
+                    android:textSize="14dp"
+                    android:gravity="center"
+                    android:textColor="#255AE8"
+                    />
+
+            </LinearLayout>
+
+
+            <LinearLayout
+                android:id="@+id/list_lay"
+                android:orientation="vertical"
+                android:layout_marginTop="10dp"
+                android:layout_weight=".915"
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:visibility="gone">
+
+            <android.support.v7.widget.RecyclerView
+                android:id="@+id/wish_list"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"></android.support.v7.widget.RecyclerView>
+
+            <android.support.v7.widget.RecyclerView
+                android:id="@+id/received_list"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:visibility="gone"></android.support.v7.widget.RecyclerView>
+            </LinearLayout>
+
+
+            <LinearLayout
+                android:id="@+id/text_lay"
+                android:orientation="vertical"
+                android:layout_marginTop="10dp"
+                android:layout_weight=".915"
+                android:layout_width="match_parent"
+                android:layout_height="0dp">
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:text="No Book Available"
+                    android:gravity="center"
+                    android:textSize="20sp"/>
+
+                </LinearLayout>
+
+            <View
+                android:layout_weight=".01"
+                android:id="@+id/templay"
+                android:layout_width="wrap_content"
+                android:layout_height="0dp"/>
+
+        </LinearLayout>
+
+    </LinearLayout>
+
+</LinearLayout>

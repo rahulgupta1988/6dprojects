@@ -1,0 +1,635 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:background="#ebebeb"
+    android:layout_height="wrap_content">
+
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <LinearLayout
+            android:orientation="vertical"
+            android:layout_width="match_parent"
+            android:background="#ebebeb"
+            android:layout_height="wrap_content">
+            <LinearLayout
+                android:orientation="vertical"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:weightSum="1"
+                android:background="@color/white"
+                android:layout_marginBottom="10dp"
+                android:visibility="visible">
+
+                <LinearLayout
+                    android:orientation="vertical"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:background="@color/white"
+                    android:padding="10dp">
+
+                    <LinearLayout
+                        android:orientation="horizontal"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:weightSum="1">
+
+
+
+                        <com.github.siyamed.shapeimageview.RoundedImageView
+                            android:id="@+id/nominatorimg"
+                            android:layout_width="50dp"
+                            android:layout_height="50dp"
+                            android:src="@drawable/default_square_user"
+                            android:layout_gravity="center_vertical"
+                            app:siBorderWidth="2dp"
+                            app:siBorderColor="@color/white"
+                            />
+
+                        <LinearLayout
+                            android:orientation="vertical"
+                            android:layout_weight=".7"
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="center"
+                            android:gravity="center"
+                            android:paddingLeft="10dp">
+
+                            <TextView
+                                android:id="@+id/nominator_name"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:text=""
+                                android:textColor="#474747"
+                                android:textSize="15sp"
+                                android:textStyle="bold" />
+
+                            <TextView
+                                android:id="@+id/nominator_designation"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:text=""
+                                android:textColor="#929292"
+                                android:textSize="11sp"
+                                android:layout_marginTop="5dp"
+                                />
+                        </LinearLayout>
+                    </LinearLayout>
+
+
+                    <LinearLayout
+                        android:id="@+id/xwicon"
+                        android:orientation="horizontal"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="10dp"
+                        android:layout_marginBottom="10dp"
+                        android:layout_gravity="center_vertical|left"
+                        android:weightSum="1">
+
+                        <ImageView
+                            android:layout_weight=".1"
+                            android:layout_gravity="center_vertical|top"
+                            android:layout_width="0dp"
+                            android:layout_height="30dp"
+                            android:src="@drawable/xw_red_2x"
+                            />
+
+                        <TextView
+                            android:layout_weight=".9"
+                            android:id="@+id/xwsubject"
+                            android:layout_gravity="center_vertical|left"
+                            android:gravity="center_vertical|left"
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content"
+                            android:text="adfdfdf"
+                            android:textSize="14sp"
+                            android:textStyle="bold"
+                            android:textColor="#c32828"
+                            android:paddingLeft="15dp"
+                            />
+
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:id="@+id/imagelay"
+                        android:layout_weight=".3"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:weightSum="1"
+                        android:gravity="center"
+                        android:layout_marginTop="10dp"
+                        android:visibility="gone">
+
+                        <ImageView
+                            android:id="@+id/postimg"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:src="@drawable/sixd"
+                            android:scaleType="fitXY"
+                            android:adjustViewBounds="true" />
+
+                    </LinearLayout>
+
+                    <FrameLayout
+                        android:id="@+id/videolay"
+                        android:layout_weight=".3"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:weightSum="1"
+                        android:layout_marginTop="10dp"
+                        android:visibility="gone">
+
+                        <ImageView
+                            android:id="@+id/postvideo"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            />
+
+                        <ImageView
+                            android:layout_gravity="center"
+                            android:id="@+id/playvideo"
+                            android:layout_width="70dp"
+                            android:layout_height="70dp"
+                            android:src="@drawable/videoplay_icon"
+                            />
+
+                    </FrameLayout>
+
+                    <LinearLayout
+                        android:id="@+id/doclay"
+                        android:layout_weight=".3"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:weightSum="1"
+                        android:gravity="center"
+                        android:layout_marginTop="10dp"
+                        android:visibility="gone">
+
+                        <!-- <TextView
+                             android:id="@+id/postdoc"
+                             android:layout_width="match_parent"
+                             android:layout_height="match_parent"
+                             android:gravity="center"
+                             android:visibility="gone"-->
+                        />
+                        <ImageView
+                            android:id="@+id/postdoc"
+                            android:layout_width="match_parent"
+                            android:layout_height="50dp"
+                            android:gravity="center"
+                            android:src="@drawable/file_3x"
+                            />
+                    </LinearLayout>
+
+
+                    <FrameLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:weightSum="1"
+                        android:visibility="visible">
+
+
+
+
+                    </FrameLayout>
+
+                    <FrameLayout
+                        android:id="@+id/thanksview"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:weightSum="1"
+                        android:visibility="visible">
+
+
+                        <LinearLayout
+                            android:orientation="horizontal"
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:weightSum="1"
+                            android:background="@drawable/rectagularforawarpost"
+                            android:layout_marginTop="30dp">
+
+                            <LinearLayout
+                                android:layout_gravity="center"
+                                android:gravity="center_horizontal|bottom"
+                                android:orientation="vertical"
+                                android:layout_weight=".3"
+                                android:layout_width="0dp"
+                                android:layout_marginBottom="5dp"
+                                android:layout_height="match_parent">
+
+                                <expression.sixdexp.com.expressionapp.utility.RoundedImageView
+                                    android:id="@+id/nominee_image"
+                                    android:layout_width="55dp"
+                                    android:layout_height="55dp"
+                                    android:src="@drawable/default_profile_picture"
+                                    />
+                            </LinearLayout>
+
+
+
+                            <LinearLayout
+                                android:orientation="vertical"
+                                android:layout_weight=".7"
+                                android:layout_width="0dp"
+                                android:layout_height="wrap_content"
+                                android:weightSum="1"
+                                android:layout_gravity="center_horizontal|top"
+                                android:gravity="center_horizontal|top"
+                                android:paddingLeft="5dp">
+
+                                <TextView
+                                    android:id="@+id/nominee_name"
+                                    android:layout_marginTop="40dp"
+                                    android:layout_width="match_parent"
+                                    android:layout_height="wrap_content"
+                                    android:text="Mr Nandankumar Tirumalai"
+                                    android:textColor="#474747"
+                                    android:textSize="15sp"
+                                    android:layout_gravity="center_vertical"
+                                    android:gravity="center_vertical"
+                                    android:paddingRight="5dp"
+                                    android:scrollHorizontally="false"
+                                    />
+
+                                <TextView
+                                    android:id="@+id/othersnominee"
+                                    android:layout_width="match_parent"
+                                    android:layout_height="wrap_content"
+                                    android:text="asdds"
+                                    android:textColor="#0b5e91"
+                                    android:textSize="13sp"
+                                    android:layout_marginTop="5dp"
+                                    android:textStyle="bold"
+                                    android:visibility="invisible"
+                                    android:paddingBottom="5dp"
+                                    />
+                            </LinearLayout>
+                        </LinearLayout>
+
+                        <LinearLayout
+                            android:orientation="horizontal"
+                            android:layout_width="match_parent"
+                            android:visibility="visible"
+                            android:layout_height="60dp">
+
+                            <ImageView
+                                android:id="@+id/thanksimg"
+                                android:layout_width="match_parent"
+                                android:layout_height="match_parent"
+                                android:layout_gravity="center_horizontal"
+                                android:src="@drawable/awar_applause"
+                                />
+                        </LinearLayout>
+
+
+                    </FrameLayout>
+
+
+
+
+                  <!--  <LinearLayout
+                        android:orientation="horizontal"
+                        android:layout_width="match_parent"
+                        android:layout_height="100dp"
+                        android:weightSum="3">
+
+
+
+
+
+
+
+                    </LinearLayout>-->
+
+
+
+
+                    <LinearLayout
+                        android:orientation="horizontal"
+                        android:id="@+id/award_imagelay"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:weightSum="1"
+                        android:visibility="gone"
+                        android:layout_marginTop="20dp"
+                        android:gravity="center">
+
+                        <ImageView
+                            android:id="@+id/award_postimg"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:src="@drawable/sixd"
+                            android:scaleType="fitXY"
+                            android:adjustViewBounds="true"
+                            android:layout_gravity="center"
+                            />
+
+                    </LinearLayout>
+
+                    <FrameLayout
+                        android:id="@+id/award_videolay"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:weightSum="1"
+                        android:layout_marginTop="20dp"
+                        android:visibility="gone">
+
+                        <ImageView
+                            android:id="@+id/award_postvideo"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:visibility="visible"
+                            />
+
+
+                        <ImageView
+                            android:layout_gravity="center"
+                            android:id="@+id/award_playvideo"
+                            android:layout_width="70dp"
+                            android:layout_height="70dp"
+                            android:src="@drawable/videoplay_icon"
+                            />
+
+                    </FrameLayout>
+
+                    <LinearLayout
+                        android:id="@+id/award_doclay"
+                        android:layout_weight=".3"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:weightSum="1"
+                        android:gravity="center"
+                        android:layout_marginTop="10dp"
+                        android:visibility="gone">
+                        />
+                        <ImageView
+                            android:id="@+id/award_postdoc"
+                            android:layout_width="match_parent"
+                            android:layout_height="50dp"
+                            android:gravity="center"
+                            android:src="@drawable/file_3x"
+                            />
+                    </LinearLayout>
+                    <LinearLayout
+                        android:id="@+id/descriptionlay"
+                        android:orientation="horizontal"
+                        android:layout_weight=".2"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="12dp"
+                        android:weightSum="1"
+                        android:visibility="gone">
+
+                        <TextView
+                            android:layout_weight=".9"
+                            android:id="@+id/description"
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content"
+                            android:textColor="#474747"
+                            android:textSize="14sp"
+                            android:text=""
+                            android:ellipsize="end"
+                            android:fontFamily="sans-serif"
+                            android:autoLink="web"
+                            />
+
+                        <TextView
+                            android:id="@+id/moreoption"
+                            android:layout_width="wrap_content"
+                            android:layout_height="match_parent"
+                            android:textColor="#c32828"
+                            android:textSize="12sp"
+                            android:text="more"
+                            android:textStyle="bold"
+                            android:gravity="right|bottom"
+                            android:visibility="gone"
+                            />
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:id="@+id/recognise_date_lay"
+                        android:orientation="horizontal"
+                        android:layout_weight=".1"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:padding="5dp"
+                        android:layout_marginTop="10dp"
+                        android:layout_marginBottom="10dp"
+                        android:visibility="gone"
+                        android:weightSum="1">
+                        <TextView
+                            android:id="@+id/recognise_date"
+                            android:layout_weight=".7"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:textColor="#929292"
+                            android:textSize="10sp"
+                            android:textStyle="bold"
+                            />
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:orientation="horizontal"
+                        android:layout_weight=".1"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:padding="5dp"
+                        android:layout_marginTop="5dp"
+                        android:weightSum="1"
+                        android:layout_gravity="center"
+                        android:gravity="center">
+
+                        <TextView
+                            android:layout_weight=".15"
+                            android:id="@+id/likescount"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:textColor="#929292"
+                            android:textSize="10sp"
+                            android:text=""
+                            android:textStyle="bold"
+                            />
+                        <TextView
+                            android:layout_weight=".15"
+                            android:id="@+id/commentscount"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:textColor="#929292"
+                            android:textSize="10sp"
+                            android:text=""
+                            android:textStyle="bold"
+                            />
+
+                        <TextView
+                            android:id="@+id/event_date"
+                            android:layout_weight=".7"
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content"
+                            android:textColor="#929292"
+                            android:textSize="10sp"
+                            android:text=""
+                            android:textStyle="bold"
+                            />
+
+                    </LinearLayout>
+
+                </LinearLayout>
+
+
+                <LinearLayout
+                    android:orientation="vertical"
+                    android:layout_weight=".2"
+                    android:layout_width="match_parent"
+                    android:layout_height="0dp"
+                    android:weightSum="1">
+                    <LinearLayout
+                        android:layout_weight=".1"
+                        android:layout_width="match_parent"
+                        android:layout_height="2dp"
+                        android:background="#e8e8e8"
+
+
+                        />
+                    <LinearLayout
+
+                        android:orientation="horizontal"
+                        android:layout_weight=".9"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:weightSum=".9"
+                        android:background="#f7f7f7"
+                        android:layout_gravity="center"
+                        android:gravity="center">
+
+                        <LinearLayout
+                            android:id="@+id/likeit"
+                            android:orientation="horizontal"
+                            android:layout_weight=".3"
+                            android:layout_width="0dp"
+                            android:layout_height="match_parent"
+                            android:weightSum="1">
+
+
+                            <LinearLayout
+                                android:gravity="center"
+                                android:layout_weight=".4"
+                                android:layout_width="0dp"
+                                android:layout_height="match_parent">
+                                <ImageView
+                                    android:layout_width="30dp"
+                                    android:layout_height="30dp"
+                                    android:src="@drawable/liked"
+                                    android:padding="5dp"
+                                    />
+
+                            </LinearLayout>
+                            <TextView
+                                android:layout_weight=".6"
+                                android:layout_width="0dp"
+                                android:layout_height="match_parent"
+                                android:text="Like"
+                                android:gravity="center_vertical|left"
+                                android:textColor="#0b5e91"
+                                />
+
+                        </LinearLayout>
+
+
+                        <LinearLayout
+                            android:id="@+id/unlikeit"
+                            android:orientation="horizontal"
+                            android:layout_weight=".3"
+                            android:layout_width="0dp"
+                            android:layout_height="match_parent"
+                            android:weightSum="1"
+                            android:visibility="gone">
+
+                            <LinearLayout
+                                android:gravity="center"
+                                android:layout_weight=".4"
+                                android:layout_width="0dp"
+                                android:layout_height="match_parent">
+                                <ImageView
+                                    android:layout_width="30dp"
+                                    android:layout_height="30dp"
+                                    android:src="@drawable/unliked"
+                                    android:padding="5dp"
+                                    />
+                            </LinearLayout>
+                            <TextView
+                                android:layout_weight=".6"
+                                android:layout_width="0dp"
+                                android:layout_height="match_parent"
+                                android:text="Unlike"
+                                android:gravity="center_vertical|left"
+                                android:textColor="#0b5e91"
+                                />
+
+                        </LinearLayout>
+
+                        <LinearLayout
+                            android:id="@+id/commentit"
+                            android:orientation="horizontal"
+                            android:layout_weight=".3"
+                            android:layout_width="0dp"
+                            android:layout_height="match_parent"
+                            android:weightSum="1">
+
+                            <LinearLayout
+                                android:gravity="center"
+                                android:layout_weight=".4"
+                                android:layout_width="0dp"
+                                android:layout_height="match_parent">
+                                <ImageView
+                                    android:layout_width="30dp"
+                                    android:layout_height="30dp"
+                                    android:src="@drawable/comment_3x"
+                                    android:padding="5dp"
+                                    />
+                            </LinearLayout>
+                            <TextView
+                                android:layout_weight=".65"
+                                android:layout_width="0dp"
+                                android:layout_height="match_parent"
+                                android:text="Comment"
+                                android:gravity="center_vertical|left"
+                                android:textColor="#0b5e91"
+                                />
+
+                        </LinearLayout>
+                        <LinearLayout
+                            android:orientation="horizontal"
+                            android:layout_weight=".15"
+                            android:layout_width="0dp"
+                            android:layout_height="match_parent"
+                            android:weightSum="1">
+                        </LinearLayout>
+                    </LinearLayout>
+                </LinearLayout>
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/morepost"
+                android:orientation="vertical"
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:visibility="gone">
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:text="More Post..."
+                    android:gravity="center"
+                    android:textColor="#2587bf"
+                    android:textSize="16sp"
+                    />
+            </LinearLayout>
+        </LinearLayout>
+    </ScrollView>
+</LinearLayout>

@@ -1,0 +1,265 @@
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <LinearLayout
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="50dp">
+
+        <ImageView
+            android:id="@+id/cancelshare"
+            android:layout_weight=".15"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:src="@drawable/back_arrow"
+            android:padding="13dp"
+            />
+
+        <views.CustomTextViewRegular
+            android:layout_weight=".85"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:text="Terms and Conditions"
+            android:textColor="@color/black"
+            android:gravity="center_vertical"
+            android:textSize="18dp"/>
+
+    </LinearLayout>
+
+
+    <RelativeLayout
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center|top"
+        android:orientation="vertical">
+
+
+        <ImageView android:layout_gravity="center_horizontal"
+            android:layout_width="fill_parent"
+            android:layout_height="135dp"
+            android:scaleType="centerCrop"
+            android:id="@+id/photo"
+            android:src="@drawable/terms_banner_bg"
+            />
+
+    </RelativeLayout>
+
+
+    <ScrollView
+        android:id="@+id/regScroll"
+        android:isScrollContainer="false"
+        android:layout_width="fill_parent"
+        android:fillViewport="true"
+        android:layout_height="0dp"
+        android:layout_weight="1">
+
+
+
+        <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+
+            <LinearLayout
+                android:id="@+id/final_ll"
+                android:layout_width="fill_parent"
+                android:layout_weight="1"
+                android:layout_marginTop="10dp"
+                android:layout_height="wrap_content"
+                android:orientation="vertical">
+
+                <LinearLayout
+                    android:id="@+id/first_ll"
+                    android:layout_width="fill_parent"
+                    android:layout_weight="1"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical"
+                    android:layout_marginLeft="15dp"
+                    android:layout_marginRight="15dp"
+                    android:visibility="visible">
+
+
+                    <LinearLayout
+                        android:id="@+id/xpress_bulletin_ll"
+                        android:layout_width="fill_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="10dp"
+                        android:orientation="vertical">
+                        <views.CustomTextViewLight
+                            android:layout_height="wrap_content"
+                            android:layout_width="match_parent"
+                            android:text="Tata Power Company Limited does not represent or endorse the accuracy or reliability of any information, content or opinion contained on, distributed through, or linked to the website. Any views or opinions presented on the website are solely those of the users and do not necessarily represent those of the company. The company will not accept any liability in respect of any communication by the users, and the user responsible will be personally liable for any damages or other liability arising.\nThe organization reserves the right, in its sole discretion and without any obligation, to make any changes to, or correct any error or omissions in any portion of the website. The organization encourages freedom of expression through the portal, however considers the below as a violation of terms and conditions of the website (indicative list). Suitable action will be taken against users disregarding the terms and conditions of Xpressions."
+                            android:textColor="@color/black"
+                            android:gravity="center|left"
+                            android:textSize="18dp"/>
+
+                    </LinearLayout>
+
+
+                    <LinearLayout
+                        android:layout_width="fill_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="10dp"
+                        android:layout_gravity="center|left"
+                        android:orientation="horizontal">
+
+                        <ImageView
+                            android:layout_height="wrap_content"
+                            android:layout_width="wrap_content"
+                            android:textColor="@color/black"
+                            android:layout_marginTop="8dp"
+                            android:src="@drawable/dot"
+                          />
+
+                        <views.CustomTextViewLight
+                            android:layout_height="wrap_content"
+                            android:layout_width="wrap_content"
+                            android:textColor="@color/black"
+                            android:layout_marginLeft="10dp"
+                            android:text="Posting obscene, indecent, discriminatory, abusive, hateful, pornographic or otherwise illegal material"
+                            android:textSize="18dp"/>
+
+
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="fill_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="6dp"
+                        android:layout_gravity="center|left"
+                        android:orientation="horizontal">
+
+                        <ImageView
+                            android:layout_height="wrap_content"
+                            android:layout_width="wrap_content"
+                            android:textColor="@color/black"
+                            android:layout_marginTop="9dp"
+                            android:src="@drawable/dot"
+                            />
+
+                        <views.CustomTextViewLight
+                            android:layout_height="wrap_content"
+                            android:layout_width="wrap_content"
+                            android:textColor="@color/black"
+                            android:text="Publishing defamatory and/or knowingly false material about the organization, colleagues and/or our customers"
+                            android:layout_marginLeft="10dp"
+                            android:textSize="18dp"/>
+
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="fill_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="6dp"
+                        android:layout_gravity="center|left"
+                        android:orientation="horizontal">
+
+                        <ImageView
+                            android:layout_height="wrap_content"
+                            android:layout_width="wrap_content"
+                            android:textColor="@color/black"
+                            android:layout_marginTop="8dp"
+                            android:src="@drawable/dot"
+                            />
+
+                        <views.CustomTextViewLight
+                            android:layout_height="wrap_content"
+                            android:layout_width="wrap_content"
+                            android:textColor="@color/black"
+                            android:layout_marginLeft="10dp"
+                            android:text="Broadcasting unsolicited personal views on social, political, religious or other non-business related matters"
+                            android:textSize="18dp"/>
+
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="fill_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="6dp"
+                        android:layout_gravity="center|left"
+                        android:orientation="horizontal">
+
+                        <ImageView
+                            android:layout_height="wrap_content"
+                            android:layout_width="wrap_content"
+                            android:textColor="@color/black"
+                            android:layout_marginTop="8dp"
+                            android:src="@drawable/dot"
+                            />
+
+                        <views.CustomTextViewLight
+                            android:layout_height="wrap_content"
+                            android:layout_width="wrap_content"
+                            android:textColor="@color/black"
+                            android:layout_marginLeft="10dp"
+                            android:text="Transmitting unsolicited commercial or advertising material"
+                            android:textSize="18dp"/>
+
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="fill_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="6dp"
+                        android:layout_gravity="center|left"
+                        android:orientation="horizontal">
+
+                        <ImageView
+                            android:layout_height="wrap_content"
+                            android:layout_width="wrap_content"
+                            android:textColor="@color/black"
+                            android:layout_marginTop="8dp"
+                            android:src="@drawable/dot"
+                            />
+
+                        <views.CustomTextViewLight
+                            android:layout_height="wrap_content"
+                            android:layout_width="wrap_content"
+                            android:textColor="@color/black"
+                            android:layout_marginLeft="10dp"
+                            android:text="Revealing confidential information about the organization such as financial information and information relating to our customers, business plans, policies, staff and/or internal discussions"
+                            android:textSize="18dp"/>
+
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="fill_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="6dp"
+                        android:layout_marginBottom="10dp"
+                        android:layout_gravity="center|left"
+                        android:orientation="horizontal">
+
+                        <ImageView
+                            android:layout_height="wrap_content"
+                            android:layout_width="wrap_content"
+                            android:textColor="@color/black"
+                            android:layout_marginTop="8dp"
+                            android:src="@drawable/dot"
+                            />
+
+                        <views.CustomTextViewLight
+                            android:layout_height="wrap_content"
+                            android:layout_width="wrap_content"
+                            android:textColor="@color/black"
+                            android:layout_marginLeft="10dp"
+                            android:text="Introducing any form of malicious software into the network"
+                            android:textSize="18dp"/>
+
+                    </LinearLayout>
+
+                </LinearLayout>
+
+
+
+                <!--    </ScrollView>-->
+            </LinearLayout>
+
+        </LinearLayout>
+    </ScrollView>
+
+</LinearLayout>

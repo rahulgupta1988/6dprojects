@@ -1,0 +1,218 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.design.widget.CoordinatorLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/searchlayparent"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <LinearLayout
+        android:id="@+id/linklay"
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <LinearLayout
+            android:orientation="horizontal"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:background="@color/white">
+
+            <ImageView
+                android:id="@+id/cancelsearch"
+                android:layout_weight=".15"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:src="@drawable/back_arrow"
+                android:padding="13dp"
+                />
+
+            <views.CustomTextViewRegular
+                android:layout_weight=".85"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:text="Search"
+                android:textColor="@color/black"
+                android:gravity="center_vertical"
+                android:textSize="18dp"/>
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:orientation="horizontal"
+            android:layout_width="match_parent"
+            android:layout_height="2dp"
+            android:background="#e2e2e2"
+            android:visibility="visible">
+
+        </LinearLayout>
+
+    <LinearLayout
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@color/dark_grey"
+        android:weightSum="1">
+
+    <LinearLayout
+        android:orientation="vertical"
+        android:layout_weight=".1"
+        android:layout_width="match_parent"
+        android:layout_height="60dp"
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="10dp"
+        android:weightSum="1"
+        >
+        <FrameLayout
+            android:orientation="horizontal"
+            android:layout_weight=".95"
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:background="@color/white">
+
+
+        <LinearLayout
+            android:orientation="horizontal"
+            android:id="@+id/searchlay"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+        </LinearLayout>
+
+        <ImageView
+            android:id="@+id/search_nav"
+            android:padding="10dp"
+            android:layout_width="50dp"
+            android:layout_height="match_parent"
+            android:src="@drawable/search_nav"
+            android:visibility="visible"
+            android:layout_gravity="right"
+            />
+
+
+    </FrameLayout>
+    <LinearLayout
+        android:layout_weight=".05"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:background="@color/dark_grey"></LinearLayout>
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/recentsearchclearlay"
+        android:orientation="horizontal"
+        android:layout_weight=".1"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:background="@color/dark_grey"
+        android:padding="10dp"
+        android:weightSum="1"
+        android:visibility="gone">
+
+        <TextView
+            android:layout_gravity="center"
+            android:gravity="center_vertical"
+            android:layout_weight=".8"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:text="Recent Searches"
+            android:textColor="#8e8d8d"
+            android:textSize="14sp" />
+
+        <ImageView
+            android:id="@+id/recentsearchclear"
+            android:layout_weight=".2"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:src="@drawable/search_cross" />
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:orientation="vertical"
+        android:layout_weight=".8"
+        android:gravity="center"
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="10dp"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@color/white">
+
+        <LinearLayout
+            android:orientation="vertical"
+            android:id="@+id/hasprofilelay"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="#919191"
+            android:weightSum="1"
+            android:visibility="gone"
+>
+
+            <LinearLayout
+                android:layout_weight=".9"
+                android:orientation="horizontal"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+
+                android:weightSum="1">
+
+                <LinearLayout
+                    android:layout_weight=".2"
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:gravity="center_horizontal|top"
+                    android:padding="5dp">
+                    <ImageView
+                        android:id="@+id/posttypeimg"
+                        android:layout_width="30dp"
+                        android:layout_height="30dp"
+                        android:src="@drawable/user_3x"
+                        android:background="#979797"
+                         />
+                </LinearLayout>
+
+                <LinearLayout
+                    android:orientation="vertical"
+                    android:layout_weight=".8"
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:gravity="center">
+
+                    <TextView
+                        android:id="@+id/searcheduser"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:textColor="#272727"
+                        android:textSize="13sp"
+                        />
+
+                </LinearLayout>
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_weight=".1"
+                android:orientation="horizontal"
+                android:layout_width="match_parent"
+                android:layout_height="2dp"
+                android:background="#e2e2e2">
+
+            </LinearLayout>
+        </LinearLayout>
+
+        <ListView
+            android:id="@+id/recent_searchlist"
+            android:gravity="center"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+
+            />
+        <android.support.v7.widget.RecyclerView
+            android:id="@+id/searchlist"
+            android:gravity="center"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:visibility="gone"
+            />
+    </LinearLayout>
+    </LinearLayout>
+    </LinearLayout>
+</android.support.design.widget.CoordinatorLayout>

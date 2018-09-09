@@ -1,0 +1,131 @@
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#ffffff">
+
+    <LinearLayout
+            android:id="@+id/xpress_bulletin_ll"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+        <FrameLayout
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:layout_marginLeft="25dp"
+            android:layout_marginRight="25dp"
+            android:layout_marginBottom="10dp">
+
+            <views.CustomEditTextViewRegular
+                android:id="@+id/searc_edit"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:hint="Search"
+                android:layout_gravity="center_vertical"
+                android:gravity="center_vertical"
+                android:textColor="#B3000000"
+                android:textColorHint="#B3000000"
+                android:textSize="18dp"
+                android:background="@color/white"
+                />
+            <ImageView
+                android:id="@+id/searc_icon"
+                android:layout_width="20dp"
+                android:layout_height="20dp"
+                android:src="@drawable/search_drawer_nw"
+                android:layout_gravity="right|center_vertical"/>
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:background="#ececec"
+                android:layout_gravity="bottom"
+                />
+
+        </FrameLayout>
+
+
+        <FrameLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="2dp"
+            android:layout_marginLeft="25dp"
+            android:layout_marginRight="25dp">
+
+           <views.CustomTextViewRegular
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Category"
+            android:textColor="#B3000000"
+            android:textSize="18dp"
+            android:id="@+id/customTextViewRegular" />
+
+        <Spinner
+            android:id="@+id/select_category"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="25dp"
+             />
+
+            <View
+                android:layout_marginTop="20dp"
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:background="#ececec"
+                android:layout_gravity="bottom"/>
+
+        </FrameLayout>
+
+
+
+        </LinearLayout>
+
+
+    <FrameLayout
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="10dp"
+        android:layout_marginTop="15dp">
+
+        <ListView
+            android:id="@+id/bulletin_list"
+            android:layout_height="wrap_content"
+            android:layout_width="match_parent"
+            android:visibility="visible"/>
+        <TextView
+            android:id="@+id/no_data_txt"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:gravity="center"
+            android:text="No Data Available..."
+            android:visibility="gone"/>
+
+
+
+        <LinearLayout
+            android:id="@+id/progress_lay"
+            android:orientation="vertical"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginLeft="10dp"
+            android:layout_marginRight="10dp"
+            android:visibility="gone"
+            android:gravity="bottom|center_horizontal">
+            <ProgressBar
+                android:layout_width="50dp"
+                android:layout_height="50dp"
+                android:layout_gravity="center"/>
+
+        </LinearLayout>
+
+    </FrameLayout>
+
+
+
+    </LinearLayout>
+
+

@@ -1,0 +1,216 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.design.widget.CoordinatorLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/searchlayparent"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+  <LinearLayout
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="#ebebeb">
+
+        <LinearLayout
+            android:orientation="horizontal"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:background="@drawable/navbar_strip_3xx">
+
+            <ImageView
+                android:id="@+id/cancelshare"
+                android:layout_weight=".2"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:src="@drawable/cross_3x"
+                android:padding="5dp"
+                />
+
+            <TextView
+                android:id="@+id/title"
+                android:layout_weight=".8"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:text="Recognition Given"
+                android:textColor="#ffffff"
+                android:gravity="center_vertical"
+                android:textSize="16sp"/>
+
+        </LinearLayout>
+
+
+
+    <ScrollView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:nestedScrollingEnabled="true">
+
+        <LinearLayout
+            android:orientation="vertical"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+    <LinearLayout
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="80dp"
+        android:padding="10dp"
+        android:background="#ffffff"
+        android:weightSum="1">
+
+        <FrameLayout
+            android:layout_weight=".5"
+            android:layout_width="0dp"
+            android:layout_height="match_parent">
+        <Spinner
+            android:layout_margin="3dp"
+            android:id="@+id/spinaward"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="@drawable/text_field">
+        </Spinner>
+
+        <ImageView
+            android:layout_width="30dp"
+            android:layout_height="match_parent"
+            android:src="@drawable/arrow_red_open_2x"
+            android:layout_gravity="right"
+            android:paddingRight="5dp"
+            />
+        </FrameLayout>
+
+        <LinearLayout
+            android:orientation="horizontal"
+            android:id="@+id/searchlay"
+            android:layout_weight=".5"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_margin="3dp"
+            android:background="@drawable/text_field"></LinearLayout>
+        <!--<AutoCompleteTextView
+            android:layout_margin="3dp"
+            android:id="@+id/searchpostedit"
+            android:layout_weight=".5"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:hint="Select Employee"
+            android:textColorHint="#8e8d8d"
+            android:background="@drawable/text_field"
+            android:drawablePadding="10dp"
+            android:paddingLeft="10dp"
+            android:singleLine="true"
+            android:visibility="visible"
+            android:textSize="12sp"
+            android:completionThreshold="3"
+            />
+-->
+        </LinearLayout>
+
+
+    <LinearLayout
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="80dp"
+        android:padding="10dp"
+        android:background="#ffffff"
+        android:weightSum="1">
+
+        <TextView
+            android:id="@+id/datefrom"
+            android:layout_margin="3dp"
+            android:layout_weight=".4"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:hint="date"
+            android:textColor="#828282"
+            android:textSize="12sp"
+            android:background="@drawable/text_field"
+            android:padding="5dp"
+            android:drawableRight="@drawable/calendar_24x24"
+            android:gravity="center_vertical"
+            />
+
+
+        <TextView
+            android:id="@+id/dateto"
+            android:layout_margin="3dp"
+            android:layout_weight=".4"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:hint="date"
+            android:textColor="#828282"
+            android:textSize="12sp"
+            android:background="@drawable/text_field"
+            android:padding="5dp"
+            android:drawableRight="@drawable/calendar_24x24"
+            android:gravity="center_vertical"
+            />
+
+        <ImageView
+            android:id="@+id/filterit"
+            android:layout_weight=".2"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:src="@drawable/go_btn"
+            android:padding="10dp"
+            />
+
+    </LinearLayout>
+
+            <LinearLayout
+                android:orientation="horizontal"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp">
+
+            <include layout="@layout/recognisegivenviewpart"/>
+            </LinearLayout>
+
+
+
+
+    <LinearLayout
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:background="#ffffff">
+        <TextView
+            android:id="@+id/givenreceivedtiitle"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:text="Recognition Given To"
+            android:gravity="center_vertical"
+            android:paddingLeft="20dp"
+            android:textColor="#272727"
+            android:textSize="14sp"
+            />
+
+
+
+        </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="2dp"
+                android:background="#e8e8e8" />
+    <LinearLayout
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="300dp">
+
+        <android.support.v7.widget.RecyclerView
+            android:id="@+id/recognisitionlist"
+            android:gravity="center"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="@color/white"
+            />
+        </LinearLayout>
+
+    </LinearLayout>
+
+    </ScrollView>
+
+    </LinearLayout>
+    </android.support.design.widget.CoordinatorLayout>
+
+

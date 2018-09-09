@@ -1,0 +1,140 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:fab="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical"
+    android:gravity="center_vertical"
+    android:paddingBottom="0.5dp"
+    android:background="#e5e5e5">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:gravity="center_vertical"
+        android:background="#ffffff"
+        android:paddingTop="10dp"
+        android:paddingBottom="10dp"
+        android:paddingRight="20dp"
+        android:paddingLeft="20dp">
+
+        <com.github.siyamed.shapeimageview.CircularImageView
+            android:id="@+id/user_img"
+            android:layout_centerVertical="true"
+            android:layout_width="40dp"
+            android:layout_height="40dp"
+            android:scaleType="centerCrop"
+            fab:siBorderWidth="2dp"
+            fab:siBorderColor="#ffffff"
+            android:background="#ffffff"
+            android:layout_alignBottom="@+id/photo"
+            android:src="@drawable/default_profile_picture"
+            android:layout_alignParentLeft="true"/>
+
+        <RelativeLayout
+            android:layout_toLeftOf="@+id/cancel"
+            android:id="@+id/text_lay"
+            android:layout_toRightOf="@+id/user_img"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="10dp"
+            android:layout_marginRight="10dp">
+            <TextView
+                android:id="@+id/name"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:gravity="center_vertical"
+                android:text="Asin kaif"
+                android:textColor="#2652AB"
+                android:textSize="16sp"
+                android:maxLines="1"
+                android:ellipsize="end" />
+
+            <views.CustomTextViewMedium
+                android:id="@+id/user_desg"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:gravity="center_vertical"
+                android:text="IT Head"
+                android:textColor="#979797"
+                android:textSize="14sp"
+                android:layout_below="@+id/name"
+                android:layout_marginTop="2dp"
+                android:maxLines="1"
+                android:ellipsize="end" />
+        </RelativeLayout>
+
+
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center_vertical"
+        android:background="#ffffff"
+        android:paddingBottom="10dp"
+        android:paddingRight="20dp"
+        android:paddingLeft="20dp">
+
+    <View
+        android:id="@+id/view1"
+        android:layout_width="40dp"
+        android:layout_height="40dp"
+        />
+
+    <RelativeLayout
+        android:layout_toRightOf="@+id/view1"
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="10dp">
+
+        <LinearLayout
+            android:orientation="horizontal"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:weightSum="1"
+            android:background="#ffffff"
+            android:gravity="center">
+
+
+
+            <Button
+                android:id="@+id/accept_btn"
+                android:layout_weight=".48"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:text="Accept"
+                android:textSize="18sp"
+                android:gravity="center"
+                android:textColor="#ffffff"
+                android:background="@drawable/rect_accept"/>
+
+            <View
+                android:layout_weight="0.04"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"/>
+
+            <Button
+                android:id="@+id/decline_btn"
+                android:layout_weight=".48"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:text="Decline"
+                android:textSize="18sp"
+                android:gravity="center"
+                android:textColor="#ffffff"
+                android:background="@drawable/rect_decline"
+                />
+
+            <View
+                android:layout_weight="0.04"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"/>
+        </LinearLayout>
+
+    </RelativeLayout>
+    </RelativeLayout>
+
+
+</LinearLayout>

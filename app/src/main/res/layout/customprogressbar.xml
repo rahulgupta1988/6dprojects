@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/container"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:visibility="visible">
+
+
+        <ImageView
+            android:layout_gravity="center"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@drawable/applogo"
+            android:visibility="gone"
+            />
+        <ProgressBar
+            android:layout_gravity="top|center_horizontal"
+            android:id="@+id/progressBar"
+            style="?android:attr/progressBarStyleLarge"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:indeterminateDrawable="@drawable/progress" >
+        </ProgressBar>
+
+        <TextView
+            android:gravity="top|center_horizontal"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Please Wait..."
+            android:layout_gravity="bottom|center_horizontal"
+            android:textColor="#ffffff"
+            android:textSize="8pt"
+            android:layout_marginTop="60dp"
+            />
+
+    </FrameLayout>

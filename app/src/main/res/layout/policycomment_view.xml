@@ -1,0 +1,248 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:weightSum="1"
+    android:background="#ffffff">
+
+
+    <RelativeLayout
+        android:layout_weight=".08"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:paddingLeft="10dp"
+        android:background="#BF433A">
+
+        <ImageView
+            android:id="@+id/back_ic"
+            android:layout_width="20dp"
+            android:layout_height="20dp"
+            android:src="@drawable/back_arrow"
+            android:layout_centerVertical="true"/>
+
+        <views.CustomTextViewRegular
+            android:id="@+id/policy_name"
+            android:layout_toRightOf="@+id/back_ic"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:textSize="15sp"
+            android:textColor="#ffffff"
+            android:textStyle="bold"
+            android:text="Comments"
+            android:layout_marginLeft="10dp"/>
+    </RelativeLayout>
+
+<View
+    android:layout_width="match_parent"
+    android:layout_height="1dp"
+    android:background="#c5c5c5"/>
+
+    <RelativeLayout
+        android:layout_weight=".15"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_marginRight="10dp"
+        android:layout_marginLeft="10dp"
+        android:layout_marginTop="5dp"
+        android:background="#ffffff">
+        <TextView
+            android:id="@+id/policy_description"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Download"
+            android:layout_margin="5dp"
+            android:textColor="#454545"
+            android:textSize="14sp"
+            android:textStyle="bold"
+            android:maxLines="4"
+            android:ellipsize="end"
+            android:scrollbars="vertical"/>
+
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:layout_weight=".12"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:background="@drawable/rectshape_strip"
+        android:layout_margin="10dp">
+
+        <EditText
+            android:id="@+id/comment_txt"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:hint="Write a comment"
+            android:background="#00000000"
+            android:padding="10dp"
+            android:textSize="12sp"/>
+
+    </RelativeLayout>
+
+    <LinearLayout
+        android:layout_weight=".06"
+        android:id="@+id/linklay"
+        android:layout_width="wrap_content"
+        android:layout_height="0dp"
+        android:orientation="horizontal"
+        android:visibility="gone"
+        android:layout_centerVertical="true"
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="10dp">
+
+        <FrameLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+            <TextView
+                android:id="@+id/videodoclink"
+                android:layout_width="100dp"
+                android:layout_height="25dp"
+                android:textSize="12sp"
+                android:text="dfdsfdsfdsfdsf"
+                android:padding="5dp"
+                android:layout_gravity="center"
+                android:background="#cac8c8"/>
+
+            <ImageView
+                android:id="@+id/cancelattachment"
+                android:layout_width="20dp"
+                android:layout_height="20dp"
+                android:src="@drawable/cancel_black"
+                android:layout_gravity="right"
+                />
+
+        </FrameLayout>
+    </LinearLayout>
+
+    <RelativeLayout
+        android:layout_weight=".08"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:paddingLeft="10dp"
+        android:background="#ffffff">
+        <LinearLayout
+            android:layout_alignParentLeft="true"
+            android:layout_width="120dp"
+            android:layout_height="match_parent"
+            android:orientation="horizontal"
+            android:visibility="visible"
+            android:layout_centerVertical="true"
+            android:gravity="center_vertical">
+
+            <FrameLayout
+                android:layout_toLeftOf="@+id/subcombtn"
+                android:layout_width="30dp"
+                android:layout_height="40dp"
+                android:layout_gravity="center_vertical"
+                android:visibility="visible">
+
+                <ImageView
+                    android:id="@+id/tagicon"
+                    android:layout_width="30dp"
+                    android:layout_height="30dp"
+                    android:src="@drawable/tag_icon"
+                    android:layout_marginTop="5dp"
+                    />
+
+                <TextView
+                    android:id="@+id/tagcount_txt"
+                    android:layout_width="20dp"
+                    android:layout_height="20dp"
+                    android:text="10"
+                    android:textColor="#e5e5e5"
+                    android:layout_gravity="right|top"
+                    android:gravity="center"
+                    android:textStyle="bold"
+                    android:textSize="12sp"
+                    android:background="@drawable/redcircle"
+                    android:visibility="gone"/>
+            </FrameLayout>
+
+
+        </LinearLayout>
+
+
+<RelativeLayout
+    android:id="@+id/add_file_lay"
+    android:layout_toLeftOf="@+id/cocreate_btn"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:layout_centerVertical="true"
+    android:layout_marginRight="20dp">
+    <ImageView
+        android:id="@+id/file_ic"
+        android:layout_width="20dp"
+        android:layout_height="20dp"
+        android:src="@drawable/add_file_ic"/>
+    <TextView
+        android:layout_toRightOf="@+id/file_ic"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Add a file"
+        android:textColor="#3a68d2"
+        android:textStyle="bold"
+        android:layout_marginLeft="5dp"/>
+
+
+
+</RelativeLayout>
+
+
+        <Button
+            android:id="@+id/cocreate_btn"
+            android:layout_alignParentRight="true"
+            android:layout_width="wrap_content"
+            android:layout_height="30dp"
+            android:background="@drawable/co_create"
+            android:text="CO-CREATE"
+            android:textSize="12sp"
+            android:textColor="#ffffff"
+            android:layout_marginRight="10dp"
+            android:layout_centerVertical="true"
+            />
+
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:layout_weight=".06"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:paddingLeft="10dp"
+        android:background="#ffffff"
+        android:gravity="center_vertical">
+        <views.CustomTextViewMedium
+            android:id="@+id/cmt_count"
+            android:layout_width="wrap_content"
+            android:layout_height="25dp"
+            android:text="15"
+            android:layout_marginLeft="5dp"
+            android:textColor="#6c6c6c"
+            android:textSize="14sp"
+            android:gravity="center"/>
+
+
+        <ImageView
+            android:layout_toRightOf="@+id/cmt_count"
+            android:layout_width="25dp"
+            android:layout_height="25dp"
+            android:src="@drawable/comment"
+            android:layout_marginLeft="10dp"/>
+
+        </RelativeLayout>
+
+    <RelativeLayout
+        android:layout_margin="0dp"
+        android:layout_weight=".48"
+        android:layout_width="match_parent"
+        android:layout_height="0dp">
+        <ExpandableListView
+            android:id="@+id/comment_list"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:groupIndicator="@null">
+
+
+        </ExpandableListView>
+    </RelativeLayout>
+</LinearLayout>

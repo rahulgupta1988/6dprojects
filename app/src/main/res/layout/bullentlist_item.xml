@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="#ececec"
+    android:layout_marginBottom="1dp">
+
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:padding="10dp"
+        android:background="#ffffff">
+         <TextView
+                android:id="@+id/sharedto"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="asfdsgshg"
+                android:textColor="#979797"
+                android:textSize="14sp"
+                android:lineSpacingExtra="2dp"
+                />
+            <TextView
+                android:layout_below="@+id/sharedto"
+                android:id="@+id/desciption"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="SFdf"
+                android:textColor="#020202"
+                android:textSize="14sp"
+                android:layout_marginTop="3dp"
+                android:textStyle="bold"
+                android:lineSpacingExtra="2dp"/>
+
+
+
+            <TextView
+                android:layout_below="@+id/desciption"
+                android:id="@+id/date"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="asfdsgshg"
+                android:textColor="#979797"
+                android:textSize="12sp"
+                android:layout_marginTop="1dp"
+                />
+
+        <ImageView
+            android:id="@+id/doc"
+            android:layout_marginTop="1dp"
+            android:layout_below="@+id/desciption"
+            android:layout_alignParentRight="true"
+            android:layout_width="20dp"
+            android:layout_height="20dp"
+            android:src="@drawable/doc_icon"/>
+
+    </RelativeLayout>
+</LinearLayout>

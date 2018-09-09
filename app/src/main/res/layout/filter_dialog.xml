@@ -1,0 +1,118 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="wrap_content"
+    android:layout_gravity="center"
+    android:gravity="center"
+    android:layout_height="fill_parent">
+
+    <LinearLayout
+        android:orientation="vertical"
+        android:layout_width="wrap_content"
+        android:layout_gravity="center"
+        android:gravity="center"
+        android:background="@color/white"
+        android:layout_height="wrap_content">
+
+        <LinearLayout
+            android:orientation="vertical"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:weightSum="1"
+            android:layout_gravity="center"
+            android:gravity="center"
+            android:background="@color/white">
+
+
+            <views.CustomEditTextViewRegular
+                android:id="@+id/from_date"
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:layout_marginLeft="30dp"
+                android:layout_marginRight="30dp"
+                android:layout_marginTop="15dp"
+                android:hint="From Date"
+                android:background="@drawable/text_field_new"
+                android:textColor="#828282"
+                android:layout_gravity=""
+                android:textSize="17sp"
+                android:padding="10dp"
+                android:gravity="center|left"
+                android:focusable="false"
+                />
+
+            <views.CustomEditTextViewRegular
+                android:id="@+id/to_date"
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:hint="To Date"
+                android:layout_marginLeft="30dp"
+                android:layout_marginRight="30dp"
+                android:layout_marginTop="10dp"
+                android:textColor="#828282"
+                android:layout_gravity=""
+                android:background="@drawable/text_field_new"
+                android:padding="10dp"
+                android:textSize="17sp"
+                android:gravity="center|left"
+                android:focusable="false"
+                />
+
+            <views.CustomEditTextViewRegular
+                android:id="@+id/all_event"
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:text="All"
+                android:layout_marginLeft="30dp"
+                android:layout_marginRight="30dp"
+                android:drawablePadding="10dp"
+                android:background="@drawable/text_field_new"
+                android:layout_marginTop="10dp"
+                android:textColor="#828282"
+                android:drawableRight="@drawable/dropdown_arrow"
+                android:layout_gravity=""
+                android:textSize="17sp"
+                android:gravity="center|left"
+                android:padding="10dp"
+                android:focusable="false"
+                />
+
+        </LinearLayout>
+
+
+
+        <LinearLayout
+            android:orientation="vertical"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:layout_marginTop="10dp"
+            android:weightSum="1"
+            android:padding="5dp">
+
+            <ImageButton
+                android:id="@+id/submitbtn"
+                android:layout_width="70dp"
+                android:layout_height="70dp"
+                android:background="@drawable/arrow_blue"
+                android:text="Login"
+                android:textColor="@color/button_color"
+                android:textSize="18sp"
+                android:textAllCaps="false"
+                />
+        </LinearLayout>
+
+
+        <LinearLayout
+            android:orientation="vertical"
+            android:layout_width="match_parent"
+            android:layout_height="20dp"
+            android:gravity="center"
+            android:weightSum="1"
+            android:padding="5dp">
+
+        </LinearLayout>
+
+
+    </LinearLayout>
+</LinearLayout>

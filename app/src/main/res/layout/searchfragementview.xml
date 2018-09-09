@@ -1,0 +1,95 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@color/dark_grey"
+    android:padding="10dp"
+    android:weightSum="1">
+
+
+    <LinearLayout
+        android:orientation="horizontal"
+        android:layout_weight=".1"
+        android:layout_width="match_parent"
+        android:layout_height="60dp"
+        android:background="@color/white"
+        android:weightSum="1">
+
+        <AutoCompleteTextView
+            android:id="@+id/searchpost"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:drawableLeft="@drawable/search"
+            android:completionThreshold="1"
+            android:visibility="gone"
+            />
+
+        <EditText
+            android:id="@+id/searchpostedit"
+            android:layout_weight="1"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:drawableLeft="@drawable/search"
+            android:hint="Search for people"
+            android:textColorHint="#8e8d8d"
+            android:background="#00000000"
+            android:drawablePadding="10dp"
+            android:padding="10dp"
+            android:singleLine="true"
+            android:visibility="visible"
+            />
+        <ImageView
+            android:padding="10dp"
+            android:layout_weight=".15"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:src="@drawable/search_nav"
+            android:visibility="gone"
+            />
+    </LinearLayout>
+
+    <LinearLayout
+        android:orientation="horizontal"
+        android:layout_weight=".1"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:background="@color/dark_grey"
+        android:padding="10dp"
+        android:weightSum="1">
+
+        <TextView
+            android:layout_gravity="center"
+            android:gravity="center_vertical"
+            android:layout_weight=".8"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:text="Recent Searches"
+            android:textColor="#8e8d8d"
+            android:textSize="12sp" />
+
+        <ImageView
+            android:layout_weight=".2"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:src="@drawable/search_cross" />
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:orientation="vertical"
+        android:layout_weight=".8"
+        android:gravity="center"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+
+        <android.support.v7.widget.RecyclerView
+            android:id="@+id/searchlist"
+            android:gravity="center"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="@color/white"
+            />
+    </LinearLayout>
+</LinearLayout>

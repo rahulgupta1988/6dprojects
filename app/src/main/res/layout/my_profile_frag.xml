@@ -1,0 +1,110 @@
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:fab="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <LinearLayout
+        android:id="@+id/linear"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:weightSum="1">
+
+        <LinearLayout
+            android:orientation="vertical"
+            android:layout_weight=".07"
+            android:layout_width="fill_parent"
+            android:layout_height="0dp"
+            android:layout_gravity="center"
+            android:gravity="center">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_gravity="center"
+                android:gravity="center"
+                android:orientation="horizontal"
+                android:weightSum="3">
+
+            <views.CustomTextViewLight
+                android:id="@+id/profile_tab"
+                android:layout_weight="1"
+                android:layout_width="wrap_content"
+                android:gravity="center"
+                android:layout_height="wrap_content"
+                android:textColor="#2f67ff"
+                android:text="Profile"
+                android:textSize="17dp"
+                />
+            <views.CustomTextViewLight
+                android:id="@+id/recentactivity_tab"
+                android:layout_width="wrap_content"
+                android:layout_weight="1"
+                android:gravity="center"
+                android:layout_height="wrap_content"
+                android:textColor="@color/black"
+                android:text="Recent Activity"
+                android:textSize="17dp"
+                />
+            <views.CustomTextViewLight
+                android:id="@+id/events_tab"
+                android:layout_weight="1"
+                android:layout_width="wrap_content"
+                android:gravity="center"
+                android:layout_height="wrap_content"
+                android:textColor="@color/black"
+                android:text="Events"
+                android:textSize="17dp"
+                />
+
+        </LinearLayout>
+
+        <View
+            android:orientation="horizontal"
+            android:layout_width="match_parent"
+            android:layout_height="3dp"
+            android:background="#c5c5c5"
+            android:visibility="visible" />
+
+    </LinearLayout>
+
+
+        <LinearLayout
+            android:orientation="vertical"
+            android:layout_weight=".93"
+            android:layout_width="fill_parent"
+            android:layout_height="0dp">
+
+            <LinearLayout
+                android:id="@+id/first_ll"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="vertical"
+                android:visibility="visible">
+                <include layout="@layout/profilefrag_profiletab" />
+            </LinearLayout>
+
+
+            <LinearLayout
+                android:id="@+id/second_ll"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="vertical"
+                android:visibility="gone">
+                <include layout="@layout/profilefrag_recenttab"/>
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/third_ll"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="vertical"
+                android:visibility="gone">
+                <include layout="@layout/frpofilefrag_eventtab"/>
+            </LinearLayout>
+
+        </LinearLayout>
+
+</LinearLayout>
+</FrameLayout>

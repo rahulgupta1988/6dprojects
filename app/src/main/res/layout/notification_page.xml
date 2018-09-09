@@ -1,0 +1,122 @@
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:fab="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <LinearLayout
+        android:id="@+id/linear"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+        <!-- other content in the activity -->
+
+        <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_weight="1"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:background="@color/white">
+
+            <LinearLayout
+                android:orientation="vertical"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:weightSum="1">
+              <!--  <include
+                    android:id="@+id/titlebar1"
+                    layout="@layout/whatstrending_test"
+                    android:layout_width="match_parent"
+                    android:layout_height="50dp" />-->
+
+
+                <RelativeLayout
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:gravity="center|top"
+                    android:orientation="vertical">
+
+
+                    <ImageView android:layout_gravity="center_horizontal"
+                        android:layout_width="fill_parent"
+                        android:layout_height="130dp"
+                        android:scaleType="centerCrop"
+                        android:id="@+id/photo"
+                        android:src="@drawable/notification_top_img"
+                        />
+
+                </RelativeLayout>
+
+
+
+
+              <!--  <FrameLayout
+                    android:layout_weight="1"
+                    android:id="@+id/container"
+                    android:layout_width="fill_parent"
+                    android:layout_height="0dp"
+                    android:orientation="vertical"
+                    android:layout_gravity="start"
+                    android:visibility="visible">
+                </FrameLayout>-->
+
+                <RelativeLayout
+                    android:orientation="vertical"
+                    android:layout_width="match_parent"
+                    android:layout_height="40dp"
+                    android:gravity="center_vertical|right">
+                    <View
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:background="#CCA"
+                        android:alpha="0.1"
+                        />
+                    <ImageView
+                        android:id="@+id/readall_not_ic"
+                        android:layout_width="120dp"
+                        android:layout_height="38dp"
+                        android:src="@drawable/mark_all_read_ic"
+                        android:layout_alignParentRight="true"
+                        android:layout_marginRight="10dp"/>
+
+                    <View
+                        android:layout_width="match_parent"
+                        android:layout_height="2dp"
+                        android:background="#c5c5c5"
+                        android:layout_alignParentBottom="true"
+                        />
+
+                   </RelativeLayout>
+
+                <LinearLayout
+                    android:orientation="vertical"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent">
+
+                    <ListView
+                        android:id="@+id/notification_list"
+                        android:layout_height="match_parent"
+                        android:layout_width="fill_parent"
+                        android:visibility="visible"/>
+
+                    <TextView
+                        android:id="@+id/nodata_txt"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:text="No Data Available..."
+                        android:gravity="center"
+                        android:visibility="gone"/>
+
+                </LinearLayout>
+
+            </LinearLayout>
+
+        </LinearLayout>
+
+
+
+    </LinearLayout>
+
+
+
+</FrameLayout>

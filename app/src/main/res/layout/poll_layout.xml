@@ -1,0 +1,90 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:weightSum=".6"
+        android:background="#BF433A">
+
+        <RelativeLayout
+            android:id="@+id/current_poll_tab"
+            android:layout_weight=".3"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:paddingRight="10dp">
+
+            <View
+                android:id="@+id/current_tab_line"
+                android:layout_width="150dp"
+                android:layout_height="5dp"
+                android:background="#ffffff"
+                android:layout_alignParentBottom="true"
+                android:layout_centerHorizontal="true"/>
+
+            <views.CustomTextViewRegular
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:text="Current Poll"
+                android:textSize="15sp"
+                android:gravity="center"
+                android:textColor="#ffffff"
+                android:layout_alignParentTop="true"
+                android:layout_centerHorizontal="true"
+                android:id="@+id/customEditTextViewRegular"
+                android:textStyle="bold"/>
+
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:id="@+id/other_poll_tab"
+            android:layout_weight=".3"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:paddingRight="5dp"
+            android:paddingLeft="5dp">
+
+            <views.CustomTextViewRegular
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:text="Previous Polls"
+                android:textSize="15sp"
+                android:gravity="center"
+                android:textColor="#ffffff"
+                android:textStyle="bold"/>
+
+            <View
+                android:id="@+id/other_tab_line"
+                android:layout_width="150dp"
+                android:layout_height="5dp"
+                android:background="#ffffff"
+                android:layout_alignParentBottom="true"
+                android:layout_centerHorizontal="true"
+                android:visibility="gone"/>
+
+        </RelativeLayout>
+
+
+    </LinearLayout>
+
+    <RelativeLayout
+        android:id="@+id/current_poll_tab_lay"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:visibility="visible">
+        <include layout="@layout/currentpoll_lay" />
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/other_poll_tab_lay"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:visibility="gone">
+        <include layout="@layout/poll_other"/>
+    </RelativeLayout>
+
+
+</LinearLayout>

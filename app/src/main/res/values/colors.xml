@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="button_color">#fefefe</color>
+    <color name="black">#000000</color>
+    <color name="edit_text_color">#666d77</color>
+    <color name="pass_lost_color">#6f6f6f</color>
+    <color name="header_background">#520000</color>
+    <color name="colorPrimary">#0485ec</color>
+    <color name="colorPrimaryDark">#303F9F</color>
+    <color name="colorAccent">#FF4081</color>
+    <color name="imagecolor">#f55220</color>
+    <!-- <color name="imagecolor">#F27529</color>-->
+    <color name="white">#FFFFFF</color>
+    <color name="light_grey">#F5F5F5</color>
+    <color name="dark_grey">#ebebeb</color>
+    <color name="grey">#999999</color>
+    <color name="red">#FF0000</color>
+
+    <color name="accent_dark">#ff2929</color>
+    <color name="accent">#c80606</color>
+    <color name="secondary_text">#727272</color>
+    <color name="white_overlay">#F3F3F3</color>
+    <color name="yellow">#FFFF00</color>
+    <color name="fab_color">#c80606</color>
+
+
+    // logged color
+    <color name="firstcolor">#5F74B5</color>
+    <color name="secondcolor">#41A8AD</color>
+    <color name="thirdcolor">#B81D7D</color>
+
+</resources>

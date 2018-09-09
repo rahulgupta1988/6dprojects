@@ -1,0 +1,158 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <LinearLayout
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:background="@drawable/navbar_strip_3xx">
+
+        <ImageView
+            android:id="@+id/cancelshare"
+            android:layout_weight=".2"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:src="@drawable/cross_3x"
+            android:padding="5dp"
+            />
+
+        <TextView
+            android:layout_weight=".8"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:text="Visitors"
+            android:textColor="#ffffff"
+            android:gravity="center_vertical"
+            android:textSize="16sp"/>
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginRight="10dp"
+        android:layout_marginLeft="10dp"
+        android:layout_marginBottom="10dp"
+        android:layout_marginTop="50dp">
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="30dp"
+            android:text="Visitors"
+            android:gravity="center"
+            android:textSize="16sp"
+            android:textColor="#1c1c1c"
+            android:fontFamily="sans-serif-condensed"
+            />
+
+
+
+    </LinearLayout>
+
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:scrollbars="horizontal">
+
+        <LinearLayout
+            android:orientation="horizontal"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="10dp"
+            android:gravity="center">
+
+            <TextView
+                android:id="@+id/digit1"
+                android:layout_width="40dp"
+                android:layout_height="40dp"
+                android:text="9"
+                android:gravity="center"
+                android:textSize="18sp"
+                android:textColor="#ffffff"
+                android:background="@color/red"
+                android:textStyle="bold"
+                android:layout_margin="4dp"
+                android:fontFamily="sans-serif-condensed"
+                />
+
+            <TextView
+                android:id="@+id/digit2"
+                android:layout_width="40dp"
+                android:layout_height="40dp"
+                android:text="9"
+                android:gravity="center"
+                android:textSize="18sp"
+                android:textColor="#ffffff"
+                android:background="@color/red"
+                android:textStyle="bold"
+                android:layout_margin="4dp"
+                android:fontFamily="sans-serif-condensed"
+                />
+
+            <TextView
+                android:id="@+id/digit3"
+                android:layout_width="40dp"
+                android:layout_height="40dp"
+                android:text="9"
+                android:gravity="center"
+                android:textSize="18sp"
+                android:textColor="#ffffff"
+                android:background="@color/red"
+                android:textStyle="bold"
+                android:layout_margin="4dp"
+                android:fontFamily="sans-serif-condensed"
+                />
+
+            <TextView
+                android:id="@+id/digit4"
+                android:layout_width="40dp"
+                android:layout_height="40dp"
+                android:text="9"
+                android:gravity="center"
+                android:textSize="18sp"
+                android:textColor="#ffffff"
+                android:background="@color/red"
+                android:textStyle="bold"
+                android:layout_margin="4dp"
+                android:fontFamily="sans-serif-condensed"
+                />
+
+            <TextView
+                android:id="@+id/digit5"
+                android:layout_width="40dp"
+                android:layout_height="40dp"
+                android:text="9"
+                android:gravity="center"
+                android:textSize="18sp"
+                android:textColor="#ffffff"
+                android:background="@color/red"
+                android:textStyle="bold"
+                android:layout_margin="4dp"
+                android:fontFamily="sans-serif-condensed"
+                />
+
+            <TextView
+                android:id="@+id/digit6"
+                android:layout_width="40dp"
+                android:layout_height="40dp"
+                android:text="9"
+                android:gravity="center"
+                android:textSize="18sp"
+                android:textColor="#ffffff"
+                android:background="@color/red"
+                android:textStyle="bold"
+                android:layout_margin="4dp"
+                android:fontFamily="sans-serif-condensed"
+                />
+
+
+        </LinearLayout>
+
+    </ScrollView>
+
+</LinearLayout>

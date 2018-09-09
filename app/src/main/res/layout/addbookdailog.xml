@@ -1,0 +1,160 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#304683">
+    <ScrollView
+        android:isScrollContainer="false"
+        android:layout_width="match_parent"
+        android:fillViewport="true"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        android:scrollbars="none">
+
+
+        <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+            android:orientation="vertical"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="#304683"
+            android:weightSum="1"
+            android:paddingLeft="10dp"
+            android:paddingRight="10dp">
+<LinearLayout
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="100dp"></LinearLayout>
+
+    <LinearLayout
+        android:orientation="vertical"
+        android:layout_width="wrap_content"
+        android:layout_height="match_parent"
+        android:background="#ffffff"
+        android:weightSum="1">
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="200dp"
+        android:background="#982d28"
+        android:gravity="center"
+        android:layout_gravity="center">
+
+
+        <com.github.siyamed.shapeimageview.CircularImageView
+            android:id="@+id/bookimg"
+            xmlns:app="http://schemas.android.com/apk/res-auto"
+            android:layout_width="120dp"
+            android:layout_height="120dp"
+            app:siBorderWidth="1dp"
+            app:siBorderColor="@color/white"
+            android:src="@drawable/add_book_ic"
+            android:layout_centerHorizontal="true"
+            />
+
+
+        <views.CustomTextViewMedium
+            android:layout_below="@+id/bookimg"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Add Book Image"
+            android:textSize="16sp"
+            android:textColor="#ffeddc"
+            android:gravity="center"
+            android:layout_marginTop="10dp"/>
+        
+
+
+    </RelativeLayout>
+
+   <LinearLayout
+       android:orientation="vertical"
+       android:layout_width="match_parent"
+       android:layout_height="200dp"
+       android:gravity="center"
+       android:layout_margin="20dp">
+
+       <EditText
+           android:id="@+id/bookname"
+           android:layout_width="match_parent"
+           android:layout_height="50dp"
+           android:background="#00000000"
+           android:hint="Book Name"
+           android:textColor="#727272"
+           android:textColorHint="#727272"
+           android:textSize="18sp"
+           android:gravity="bottom|center_horizontal"
+           android:paddingBottom="10dp"
+           android:maxLength="50"/>
+
+       <View
+           android:layout_width="match_parent"
+           android:layout_height="1dp"
+           android:background="#d6d6d6"/>
+
+       <View
+           android:layout_width="match_parent"
+           android:layout_height="20dp"/>
+
+       <EditText
+           android:id="@+id/authorname"
+           android:layout_width="match_parent"
+           android:layout_height="50dp"
+           android:background="#00000000"
+           android:hint="Author"
+           android:textColor="#727272"
+           android:textColorHint="#727272"
+           android:textSize="18sp"
+           android:gravity="bottom|center_horizontal"
+           android:paddingBottom="10dp"
+           android:maxLength="50"/>
+       <View
+           android:layout_width="match_parent"
+           android:layout_height="1dp"
+           android:background="#d6d6d6"/>
+   </LinearLayout>
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="10dp"/>
+    <LinearLayout
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:weightSum="1"
+        android:gravity="center"
+        android:layout_marginRight="20dp"
+        android:layout_marginLeft="20dp">
+    <Button
+        android:id="@+id/btndone"
+        android:layout_weight=".4"
+        android:layout_width="0dp"
+        android:layout_height="50dp"
+        android:text="DONE"
+        android:textSize="18dp"
+        android:gravity="center"
+        android:background="@drawable/rectdone"
+        android:textColor="#ffffff"
+        android:textStyle="bold"/>
+        <View
+            android:layout_weight=".1"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"/>
+
+     <Button
+         android:id="@+id/btncancel"
+            android:layout_weight=".4"
+            android:layout_width="0dp"
+            android:layout_height="50dp"
+            android:text="CANCEL"
+            android:textSize="18dp"
+            android:gravity="center"
+            android:background="@drawable/rectcancel"
+            android:textColor="#b1413c"
+            android:textStyle="bold"/>
+
+    </LinearLayout>
+
+    </LinearLayout>
+        </LinearLayout>
+    </ScrollView>
+</LinearLayout>

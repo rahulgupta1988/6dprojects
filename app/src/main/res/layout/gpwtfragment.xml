@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.design.widget.CoordinatorLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/trendingcoorinate"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#EBEBEB">
+
+
+    <LinearLayout
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_margin="10dp"
+        android:background="@drawable/recangularcorner">
+
+        <!--  <TextView
+              android:id="@+id/trendingtypetxt"
+              android:layout_width="match_parent"
+              android:layout_height="30dp"
+              android:text="General"
+              android:gravity="center_vertical"
+              android:paddingLeft="10dp"
+              android:textStyle="bold"
+              android:textSize="16sp"
+              android:fontFamily="sans-serif-condensed"
+              android:layout_marginBottom="5dp"
+              />-->
+
+        <android.support.v7.widget.RecyclerView
+            android:id="@+id/trendlist"
+            android:gravity="center"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            />
+
+    </LinearLayout>
+
+</android.support.design.widget.CoordinatorLayout>

@@ -1,0 +1,302 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:weightSum="1">
+
+    <LinearLayout
+        android:orientation="horizontal"
+        android:layout_weight=".3"
+        android:layout_width="match_parent"
+        android:layout_height="130dp"
+        android:gravity="center"
+        android:layout_marginBottom="10dp"
+        android:weightSum="1">
+
+        <LinearLayout
+            android:layout_weight=".04"
+            android:orientation="vertical"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:weightSum="1"/>
+        <LinearLayout
+            android:id="@+id/thanklay"
+            android:layout_weight=".45"
+            android:orientation="vertical"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:background="@color/white"
+            android:weightSum="1"
+            android:alpha="0.3">
+
+            <ImageView
+                android:layout_weight=".7"
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:src="@drawable/awar_thankyou"
+                android:padding="10dp"
+                />
+
+            <TextView
+                android:id="@+id/thankcount"
+                android:layout_weight=".3"
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:text="0"
+                android:gravity="center"
+                android:textSize="9pt"
+                android:background="#AF4648"
+                android:textColor="@color/white"
+                android:textStyle="bold"
+                android:visibility="visible"
+                />
+
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_weight=".02"
+            android:orientation="vertical"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:weightSum="1"/>
+        <LinearLayout
+            android:id="@+id/drivetoleadlay"
+            android:layout_weight=".45"
+            android:orientation="vertical"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:background="@color/white"
+            android:weightSum="1"
+            android:alpha="0.3">
+
+            <ImageView
+                android:layout_weight=".7"
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:src="@drawable/awar_dricetolead"
+                android:padding="10dp"
+                />
+
+            <TextView
+                android:id="@+id/drivetoleadcount"
+                android:layout_weight=".3"
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:text="0"
+                android:gravity="center"
+                android:textSize="9pt"
+                android:background="#7DA26B"
+                android:textColor="@color/white"
+                android:textStyle="bold"
+                android:visibility="visible"
+                />
+
+
+        </LinearLayout>
+        <LinearLayout
+            android:layout_weight=".04"
+            android:orientation="vertical"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:weightSum="1"/>
+    </LinearLayout>
+
+    <LinearLayout
+        android:orientation="horizontal"
+        android:layout_weight=".3"
+        android:layout_width="match_parent"
+        android:layout_height="130dp"
+        android:gravity="center"
+        android:layout_marginBottom="10dp"
+        android:weightSum="1">
+
+        <LinearLayout
+            android:layout_weight=".04"
+            android:orientation="vertical"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:weightSum="1"/>
+        <LinearLayout
+            android:id="@+id/cheertopeerlay"
+            android:layout_weight=".45"
+            android:orientation="vertical"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:background="@color/white"
+            android:weightSum="1"
+            android:alpha="0.3">
+
+            <ImageView
+                android:layout_weight=".7"
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:src="@drawable/awar_cheerapeer"
+                android:padding="10dp"
+                />
+
+            <TextView
+                android:id="@+id/cheertopeercount"
+                android:layout_weight=".3"
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:text="0"
+                android:gravity="center"
+                android:textSize="9pt"
+                android:background="#93518A"
+                android:textColor="@color/white"
+                android:textStyle="bold"
+                android:visibility="visible"
+                />
+
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_weight=".02"
+            android:orientation="vertical"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:weightSum="1"/>
+        <LinearLayout
+            android:id="@+id/ivaluelay"
+            android:layout_weight=".45"
+            android:orientation="vertical"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:background="@color/white"
+            android:weightSum="1"
+            android:alpha="0.3">
+
+            <ImageView
+                android:layout_weight=".7"
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:src="@drawable/awar_ivalueyou"
+                android:padding="10dp"
+                />
+
+            <TextView
+                android:id="@+id/ivaluecount"
+                android:layout_weight=".3"
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:text="0"
+                android:gravity="center"
+                android:textSize="9pt"
+                android:background="#AB8C4F"
+                android:textColor="@color/white"
+                android:textStyle="bold"
+                android:visibility="visible"
+                />
+
+
+        </LinearLayout>
+        <LinearLayout
+            android:layout_weight=".04"
+            android:orientation="vertical"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:weightSum="1"/>
+    </LinearLayout>
+
+    <LinearLayout
+        android:orientation="horizontal"
+        android:layout_weight=".3"
+        android:layout_width="match_parent"
+        android:layout_height="130dp"
+        android:gravity="center"
+        android:layout_marginBottom="10dp"
+        android:weightSum="1">
+
+        <LinearLayout
+            android:layout_weight=".04"
+            android:orientation="vertical"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:weightSum="1"/>
+        <LinearLayout
+            android:id="@+id/applauselay"
+            android:layout_weight=".45"
+            android:orientation="vertical"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:background="@color/white"
+            android:weightSum="1"
+            android:alpha="0.3">
+
+            <ImageView
+                android:layout_weight=".7"
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:src="@drawable/awar_applause"
+                android:padding="10dp"
+                />
+
+            <TextView
+                android:id="@+id/applausecount"
+                android:layout_weight=".3"
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:text="0"
+                android:gravity="center"
+                android:textSize="9pt"
+                android:background="#586490"
+                android:textColor="@color/white"
+                android:textStyle="bold"
+                android:visibility="visible"
+                />
+
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_weight=".02"
+            android:orientation="vertical"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:weightSum="1"/>
+        <LinearLayout
+            android:layout_weight=".45"
+            android:orientation="vertical"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:background="#AE2A2A"
+            android:weightSum="1">
+
+            <TextView
+                android:layout_weight=".6"
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:text="Total\nRecognition\nGiven"
+                android:paddingLeft="10dp"
+                android:gravity="bottom"
+                android:textSize="8pt"
+                android:textColor="@color/white"
+                android:textStyle="bold"
+                />
+
+            <TextView
+                android:id="@+id/totalcount"
+                android:layout_weight=".4"
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:text="0"
+                android:paddingLeft="10dp"
+                android:gravity="top"
+                android:textSize="12pt"
+                android:textColor="@color/white"
+                android:textStyle="bold"
+                />
+
+
+        </LinearLayout>
+        <LinearLayout
+            android:layout_weight=".04"
+            android:orientation="vertical"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:weightSum="1"/>
+    </LinearLayout>
+</LinearLayout>

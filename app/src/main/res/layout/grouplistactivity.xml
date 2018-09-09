@@ -1,0 +1,194 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:weightSum="1"
+    android:background="#f1f1f1">
+
+    <RelativeLayout
+        android:layout_weight=".1"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:background="#ffffff">
+
+        <ImageView
+            android:id="@+id/toread_back"
+            android:layout_width="25dp"
+            android:layout_height="25dp"
+            android:src="@drawable/back_arrow"
+            android:layout_alignParentLeft="true"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="10dp"/>
+
+        <views.CustomTextViewMedium
+            android:id="@+id/groups_count"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Groups (14)"
+            android:textSize="18dp"
+            android:textColor="#0f0f0f"
+            android:layout_toRightOf="@+id/toread_back"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="10dp"
+            />
+
+        <ImageView
+            android:id="@+id/create_group"
+            android:layout_width="30dp"
+            android:layout_height="30dp"
+            android:src="@drawable/add_group_ic"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:layout_marginRight="10dp"/>
+
+    </RelativeLayout>
+
+    <LinearLayout
+        xmlns:app="http://schemas.android.com/apk/res-auto"
+        android:layout_weight=".08"
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:weightSum="1"
+        android:background="#BF433A"
+        android:visibility="visible">
+
+        <android.support.design.widget.TabLayout
+            android:id="@+id/tabs"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            app:tabGravity="fill"
+            app:tabIndicatorColor="#ffffff"
+            app:tabIndicatorHeight="3dp"
+            app:tabMode="fixed"
+            app:tabTextAppearance="@android:style/TextAppearance.Widget.TabWidget" />
+    </LinearLayout>
+
+
+
+
+    <RelativeLayout
+        android:id="@+id/search_lay"
+        android:layout_weight=".08"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_marginTop="0dp"
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="10dp"
+        android:visibility="gone"
+        android:background="@drawable/rect_white">
+
+        <views.CustomEditTextView
+            android:id="@+id/grp_src"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:hint="Search for groups"
+            android:textSize="18dp"
+            android:textColor="#000000"
+            android:textColorHint="#000000"
+            android:paddingLeft="20dp"
+            android:gravity="center_vertical"
+            android:layout_toLeftOf="@+id/searc_ic"
+            android:background="#00000000"
+            android:maxLines="1"
+            android:inputType="text"/>
+
+
+        <ImageView
+            android:id="@+id/searc_ic"
+            android:layout_width="40dp"
+            android:layout_height="40dp"
+            android:layout_alignParentRight="true"
+            android:src="@drawable/search_3x"
+            android:layout_centerVertical="true"
+            android:paddingRight="10dp"/>
+
+
+    </RelativeLayout>
+
+
+    <LinearLayout
+        android:id="@+id/list_lay"
+        android:layout_weight=".82"
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_margin="5dp"
+        android:visibility="gone">
+
+        <FrameLayout
+            android:orientation="vertical"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+        <android.support.v7.widget.RecyclerView
+            android:id="@+id/groups_list"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"></android.support.v7.widget.RecyclerView>
+
+            <LinearLayout
+                android:id="@+id/progress_lay"
+                android:orientation="vertical"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_marginLeft="10dp"
+                android:layout_marginRight="10dp"
+                android:visibility="gone"
+                android:gravity="bottom|center_horizontal">
+                <ProgressBar
+                    android:layout_width="50dp"
+                    android:layout_height="50dp"
+                    android:layout_gravity="center"/>
+
+            </LinearLayout>
+
+
+
+        <android.support.v7.widget.RecyclerView
+            android:id="@+id/search_groups_list"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:visibility="gone"></android.support.v7.widget.RecyclerView>
+
+            <LinearLayout
+                android:id="@+id/progress_lay_search"
+                android:orientation="vertical"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_marginLeft="10dp"
+                android:layout_marginRight="10dp"
+                android:visibility="gone"
+                android:gravity="bottom|center_horizontal">
+                <ProgressBar
+                    android:layout_width="50dp"
+                    android:layout_height="50dp"
+                    android:layout_gravity="center"/>
+
+            </LinearLayout>
+
+        </FrameLayout>
+
+    </LinearLayout>
+
+
+    <LinearLayout
+        android:id="@+id/no_group_txt"
+        android:layout_weight=".7"
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_margin="5dp"
+        android:visibility="visible">
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:text="No Group Available"
+            android:textSize="20sp"
+            android:gravity="center"
+            android:textColor="#000000"
+            android:textStyle="normal"/>
+        </LinearLayout>
+
+</LinearLayout>

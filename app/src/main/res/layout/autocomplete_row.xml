@@ -1,0 +1,69 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:id="@+id/recentlay"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@color/white"
+    android:weightSum="1">
+
+    <LinearLayout
+        android:layout_weight="1"
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:padding="5dp"
+        android:weightSum="1">
+
+        <LinearLayout
+            android:layout_weight=".15"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:gravity="center_horizontal|top">
+            <ImageView
+                android:id="@+id/posttypeimg"
+                android:layout_width="40dp"
+                android:layout_height="40dp"
+                android:src="@drawable/location_point"
+                android:padding="5dp" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:orientation="vertical"
+            android:layout_weight=".85"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:gravity="center">
+
+            <views.CustomTextViewMedium
+                android:id="@+id/place_name"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Location"
+                android:singleLine="true"
+                android:textColor="#4e5665"
+                android:textSize="14sp"
+                />
+            <views.CustomTextViewRegular
+                android:id="@+id/place_detail"
+                android:layout_marginTop="5dp"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:singleLine="true"
+                android:text="Location Detail"
+                android:textColor="#9197a3"
+                android:textSize="12sp"
+                />
+
+        </LinearLayout>
+    </LinearLayout>
+<!--
+    <LinearLayout
+        android:layout_weight=".1"
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="2dp"
+        android:background="#e2e2e2">
+
+    </LinearLayout>-->
+</LinearLayout>

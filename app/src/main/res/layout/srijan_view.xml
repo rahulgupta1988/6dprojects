@@ -1,0 +1,252 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:fab="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:weightSum="1"
+    android:background="#e5e5e5"
+    android:visibility="visible">
+
+    <LinearLayout
+        android:id="@+id/top_comment_card"
+        android:layout_weight=".6"
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_margin="10dp"
+        android:visibility="visible"
+        android:padding="0dp">
+
+        <RelativeLayout
+            android:layout_weight=".07"
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:paddingLeft="10dp"
+            android:paddingRight="10dp"
+            android:layout_marginBottom="2dp"
+            android:background="#FFD562">
+
+            <views.CustomTextViewMedium
+                android:id="@+id/policyname"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:text="Empolyeement of Relatives"
+                android:textSize="14sp"
+                android:gravity="center"
+                android:textColor="#312a14"
+                android:maxLength="35"
+                android:maxLines="1"
+                android:ellipsize="end"
+                android:textStyle="bold"
+                android:fontFamily="serif"/>
+
+            <ImageView
+                android:id="@+id/cmt_ic"
+                android:layout_width="20dp"
+                android:layout_height="20dp"
+                android:layout_alignParentRight="true"
+                android:src="@drawable/comment"
+                android:layout_centerVertical="true"></ImageView>
+
+
+            <ImageView
+                android:id="@+id/like_ic"
+                android:layout_toLeftOf="@+id/cmt_ic"
+                android:layout_width="20dp"
+                android:layout_height="20dp"
+                android:src="@drawable/like"
+                android:layout_centerVertical="true"
+                android:layout_marginRight="10dp"
+                android:visibility="gone"></ImageView>
+
+        </RelativeLayout>
+
+
+        <LinearLayout
+            android:orientation="vertical"
+            android:layout_weight=".63"
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:weightSum="1"
+            android:background="@drawable/srijan_rect_boader"
+            android:padding="10dp">
+            <RelativeLayout
+                android:id="@+id/userview"
+                android:layout_weight=".15"
+                android:layout_width="match_parent"
+                android:layout_height="0dp">
+                <com.github.siyamed.shapeimageview.CircularImageView
+                    android:id="@+id/userimage"
+                    android:layout_centerVertical="true"
+                    android:layout_width="40dp"
+                    android:layout_height="40dp"
+                    android:scaleType="centerCrop"
+                    fab:siBorderWidth="2dp"
+                    fab:siBorderColor="#ffffff"
+                    android:background="#ffffff"
+                    android:layout_alignBottom="@+id/photo"
+                    android:src="@drawable/default_profile_picture" />
+                <views.CustomTextViewRegular
+                    android:id="@+id/username"
+                    android:layout_toRightOf="@+id/userimage"
+                    android:layout_toLeftOf="@+id/tag_lay"
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:text="User Name"
+                    android:gravity="center_vertical"
+                    android:textSize="15sp"
+                    android:textColor="#585858"
+                    android:textStyle="bold"
+                    android:layout_marginLeft="10dp"
+                    android:fontFamily="monospace"
+                    android:maxLines="1"
+                    android:ellipsize="end"/>
+
+                <FrameLayout
+                    android:id="@+id/tag_lay"
+                    android:layout_alignParentRight="true"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginRight="10dp">
+
+                    <ImageView
+                        android:id="@+id/tagicon"
+                        android:layout_width="30dp"
+                        android:layout_height="20dp"
+                        android:src="@drawable/tag_icon"
+                        android:layout_marginTop="5dp"
+                        />
+
+                    <TextView
+                        android:id="@+id/tagcount_txt"
+                        android:layout_width="15dp"
+                        android:layout_height="15dp"
+                        android:text="10"
+                        android:textColor="#e5e5e5"
+                        android:layout_gravity="right|top"
+                        android:gravity="center"
+                        android:textStyle="bold"
+                        android:textSize="10sp"
+                        android:background="@drawable/redcircle"
+                        android:visibility="visible"/>
+                </FrameLayout>
+
+            </RelativeLayout>
+            <RelativeLayout
+                android:layout_weight=".77"
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:paddingTop="5dp">
+
+                <views.CustomTextViewRegular
+                    android:id="@+id/description"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:textColor="#1c1c1c"
+                    android:textSize="15dp"
+                    android:text="qwreqwer  qweqwe erq"
+                    android:lineSpacingExtra="1dp"
+                    android:autoLink="web"
+                    android:maxLines="8"
+                    android:ellipsize="end"
+                    android:layout_alignParentTop="true"
+                    android:layout_alignParentStart="true" />
+
+
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:layout_weight=".08"
+                android:layout_width="match_parent"
+                android:layout_height="0dp">
+
+                <RelativeLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent">
+                    <ImageView
+                        android:id="@+id/cal_ic"
+                        android:layout_width="15dp"
+                        android:layout_height="15dp"
+                        android:src="@drawable/srijan_date"
+                        android:layout_centerVertical="true"/>
+                    <views.CustomTextViewRegular
+                        android:id="@+id/date_txt"
+                        android:layout_toRightOf="@+id/cal_ic"
+                        android:layout_width="wrap_content"
+                        android:layout_height="match_parent"
+                        android:text="Apr 05 2017"
+                        android:gravity="center"
+                        android:textSize="11sp"
+                        android:layout_marginLeft="5dp"
+                        android:textColor="#F08727"
+                        android:textStyle="bold"/>
+                </RelativeLayout>
+
+                <RelativeLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:layout_centerHorizontal="true">
+                    <ImageView
+                        android:id="@+id/time_ic"
+                        android:layout_width="15dp"
+                        android:layout_height="15dp"
+                        android:src="@drawable/srijan_time"
+                        android:layout_centerVertical="true"/>
+                    <views.CustomTextViewRegular
+                        android:id="@+id/time_txt"
+                        android:layout_toRightOf="@+id/time_ic"
+                        android:layout_width="wrap_content"
+                        android:layout_height="match_parent"
+                        android:text="Apr 05 2017"
+                        android:gravity="center"
+                        android:textSize="11sp"
+                        android:layout_marginLeft="5dp"
+                        android:textColor="#F08727"
+                        android:textStyle="bold"/>
+                </RelativeLayout>
+
+
+                <RelativeLayout
+                    android:id="@+id/rpl_lay"
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:layout_alignParentRight="true">
+                    <ImageView
+                        android:id="@+id/rep_ic"
+                        android:layout_width="15dp"
+                        android:layout_height="15dp"
+                        android:src="@drawable/srijan_replay"
+                        android:layout_centerVertical="true"/>
+                    <views.CustomTextViewRegular
+                        android:layout_toRightOf="@+id/rep_ic"
+                        android:layout_width="wrap_content"
+                        android:layout_height="match_parent"
+                        android:text="Reply"
+                        android:gravity="center"
+                        android:textSize="14sp"
+                        android:layout_marginLeft="5dp"
+                        android:textColor="#3c63d3"
+                        android:textStyle="bold"/>
+                </RelativeLayout>
+
+            </RelativeLayout>
+        </LinearLayout>
+    </LinearLayout>
+    <RelativeLayout
+        android:id="@+id/bottom_list_lay"
+        android:layout_weight=".4"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:background="#ffffff"
+        android:visibility="visible">
+
+        <android.support.v7.widget.RecyclerView
+            android:id="@+id/srijan_comment_list"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="#ffffff"
+            android:layout_marginLeft="10dp"></android.support.v7.widget.RecyclerView>
+    </RelativeLayout>
+
+</LinearLayout>

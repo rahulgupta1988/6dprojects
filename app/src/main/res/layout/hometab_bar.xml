@@ -1,0 +1,155 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="horizontal"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@color/white"
+    android:weightSum=".9">
+
+
+    <LinearLayout
+        android:orientation="horizontal"
+        android:layout_weight=".3"
+        android:layout_width="0dp"
+        android:layout_height="match_parent"
+        android:weightSum="1">
+
+    <LinearLayout
+        android:orientation="vertical"
+        android:id="@+id/sharetab"
+        android:layout_weight=".995"
+        android:layout_width="0dp"
+        android:layout_height="match_parent"
+        android:weightSum="1"
+        android:padding="2dp">
+        <ImageView
+            android:layout_weight=".5"
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:src="@drawable/share_and_update_2x"
+            />
+
+        <TextView
+            android:id="@+id/shareupdatetxt"
+            android:layout_weight=".49"
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:textColor="#1c1c1c"
+            android:text="Share an Update"
+            android:textSize="12sp"
+            android:gravity="center"
+            />
+        <View
+            android:layout_weight=".01"
+            android:id="@+id/hometab_selected"
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:background="#000000"
+            android:visibility="gone"
+            />
+
+    </LinearLayout>
+
+        <View
+            android:layout_weight=".005"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:background="#606060"
+            />
+    </LinearLayout>
+    <LinearLayout
+        android:orientation="horizontal"
+        android:layout_weight=".3"
+        android:layout_width="0dp"
+        android:layout_height="match_parent"
+
+        android:weightSum="1">
+
+    <LinearLayout
+        android:orientation="vertical"
+        android:id="@+id/recognisetab"
+        android:layout_weight=".995"
+        android:layout_width="0dp"
+        android:layout_height="match_parent"
+        android:padding="2dp"
+        android:weightSum="1">
+        <ImageView
+            android:layout_weight=".5"
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:src="@drawable/recognise_2x"
+            />
+
+        <TextView
+            android:id="@+id/recotxt"
+            android:layout_weight=".49"
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:textColor="#1c1c1c"
+            android:text="Recognize Someone"
+            android:textSize="12sp"
+            android:gravity="center"
+            />
+        <View
+            android:layout_weight=".01"
+            android:id="@+id/profiletab_selected"
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:background="#000000"
+            android:visibility="gone"
+            />
+    </LinearLayout>
+        <View
+            android:layout_weight=".005"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:background="#606060"
+            />
+    </LinearLayout>
+
+
+    <LinearLayout
+        android:orientation="horizontal"
+        android:layout_weight=".3"
+        android:layout_width="0dp"
+        android:layout_height="match_parent"
+        android:weightSum="1">
+    <LinearLayout
+        android:orientation="vertical"
+        android:id="@+id/telltab"
+        android:layout_weight=".99"
+        android:layout_width="0dp"
+        android:layout_height="match_parent"
+        android:padding="2dp"
+        android:weightSum="1">
+        <ImageView
+            android:layout_weight=".5"
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:src="@drawable/tell_a_tale_2x"
+            />
+
+        <TextView
+            android:id="@+id/telltxt"
+            android:layout_weight=".49"
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:textColor="#1c1c1c"
+            android:text="Tell-A-Tale"
+            android:textSize="12sp"
+            android:gravity="center"
+
+            />
+        <View
+            android:layout_weight=".01"
+            android:id="@+id/xwtab_selected"
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:background="#000000"
+            android:visibility="gone"
+            />
+    </LinearLayout>
+
+    </LinearLayout>
+
+</LinearLayout>

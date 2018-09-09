@@ -1,0 +1,212 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical">
+
+
+    <LinearLayout
+        android:id="@+id/polltitlelay"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/white"
+        android:orientation="vertical">
+
+
+        <TextView
+            android:id="@+id/polltitle"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center_vertical"
+            android:padding="10dp"
+            android:text="Current Poll"
+            android:textColor="#c32828"
+            android:textSize="14sp"/>
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@color/white"
+        android:orientation="vertical"
+        android:padding="5dp"
+        android:layout_marginTop="5dp">
+
+
+        <TextView
+            android:id="@+id/pollquestiontxt"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center_vertical"
+            android:padding="10dp"
+            android:text="Current Poll"
+            android:textColor="#474747"
+            android:textSize="13sp"
+            />
+
+
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="10dp"
+            android:layout_marginTop="10dp"
+            android:orientation="vertical">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:weightSum="1">
+
+                <TextView
+                    android:id="@+id/yestxt"
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight=".25"
+                    android:gravity="center_vertical"
+                    android:textColor="#474747"
+                    android:textSize="13sp"
+                    android:text="Yes" />
+                <!--
+                                    <ProgressBar
+                                        android:gravity="center"
+                                        android:layout_gravity="center"
+                                        style="@android:style/Widget.ProgressBar.Horizontal"
+                                        android:id="@+id/yesprog"
+                                        android:layout_width="0dp"
+                                        android:layout_height="15dp"
+                                        android:layout_margin="7dp"
+                                        android:layout_weight=".6"
+                                        android:progress="30"
+                                        android:background="@drawable/yescustomprogress"
+                                        />-->
+                <ProgressBar
+                    android:id="@+id/yesprog"
+                    style="@android:style/Widget.ProgressBar.Horizontal"
+                    android:layout_width="0dp"
+                    android:layout_height="15dp"
+                    android:layout_margin="7dp"
+                    android:layout_weight=".6"
+                    android:progressDrawable="@drawable/yescustomprogress"
+                    android:progress="30" />
+
+
+                <TextView
+                    android:id="@+id/yesprogtxt"
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight=".15"
+                    android:gravity="center"
+                    android:textColor="#474747"
+                    android:textSize="13sp"
+                    android:text="100%" />
+            </LinearLayout>
+
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:weightSum="1">
+
+                <TextView
+                    android:id="@+id/notxt"
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight=".25"
+                    android:gravity="center_vertical"
+                    android:textColor="#474747"
+                    android:textSize="13sp"
+                    android:text="No" />
+
+                <ProgressBar
+                    android:id="@+id/noprog"
+                    style="@android:style/Widget.ProgressBar.Horizontal"
+                    android:layout_width="0dp"
+                    android:layout_height="15dp"
+                    android:layout_margin="7dp"
+                    android:layout_weight=".6"
+                    android:progressDrawable="@drawable/nopcustomprogress"
+                    android:progress="30"
+                    />
+
+
+                <TextView
+                    android:id="@+id/noprogtxt"
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight=".15"
+                    android:gravity="center"
+                    android:textColor="#474747"
+                    android:textSize="13sp"
+                    android:text="100%" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:weightSum="1">
+
+                <TextView
+                    android:id="@+id/cantsayxt"
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight=".25"
+                    android:gravity="center_vertical"
+                    android:textColor="#474747"
+                    android:textSize="13sp"
+                    android:text="Can't say" />
+
+                <ProgressBar
+                    android:id="@+id/cantsayprog"
+                    style="@android:style/Widget.ProgressBar.Horizontal"
+                    android:layout_width="0dp"
+                    android:layout_height="15dp"
+                    android:layout_margin="7dp"
+                    android:layout_weight=".6"
+                    android:progressDrawable="@drawable/cantcustomprogress"
+                    android:progress="30"
+                    />
+
+
+                <TextView
+                    android:id="@+id/cantsayprogtxt"
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight=".15"
+                    android:gravity="center"
+                    android:textColor="#474747"
+                    android:textSize="13sp"
+                    android:text="100%" />
+            </LinearLayout>
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_vertical|right"
+            android:layout_margin="10dp"
+            android:background="@color/white">
+
+            <TextView
+                android:id="@+id/closeddateofpoll"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:gravity="center_vertical|right"
+                android:text="Ended On"
+                android:textColor="#d33308"
+                android:paddingRight="10dp"
+                android:paddingBottom="20dp"
+                />
+        </LinearLayout>
+
+    </LinearLayout>
+
+
+
+</LinearLayout>

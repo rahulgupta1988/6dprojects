@@ -1,0 +1,529 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:id="@+id/linear"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="@color/white">
+
+
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:gravity="center"
+        android:orientation="horizontal"
+        android:layout_margin="5dp"
+        android:weightSum="3">
+
+        <views.CustomTextViewLight
+            android:id="@+id/profile_tab"
+            android:layout_weight="1"
+            android:layout_width="wrap_content"
+            android:gravity="center"
+            android:layout_height="wrap_content"
+            android:textColor="#2f67ff"
+            android:text="Profile"
+            android:textSize="17dp"
+            />
+        <views.CustomTextViewLight
+            android:id="@+id/recentactivity_tab"
+            android:layout_width="wrap_content"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:layout_height="wrap_content"
+            android:textColor="@color/black"
+            android:text="Recent Activity"
+            android:textSize="17dp"
+            />
+        <views.CustomTextViewLight
+            android:id="@+id/events_tab"
+            android:layout_weight="1"
+            android:layout_width="wrap_content"
+            android:gravity="center"
+            android:layout_height="wrap_content"
+            android:textColor="@color/black"
+            android:text="Events"
+            android:textSize="17dp"
+            />
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="2dp"
+        android:background="#e2e2e2"
+        android:visibility="visible">
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/final_ll"
+        android:layout_width="fill_parent"
+        android:layout_weight="1"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+    <LinearLayout
+        android:id="@+id/first_ll"
+        android:layout_width="fill_parent"
+        android:layout_weight="1"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:visibility="visible">
+
+        <LinearLayout
+            android:layout_weight=".400"
+            android:layout_width="fill_parent"
+            android:layout_height="0dp"
+            android:orientation="vertical">
+
+            <RelativeLayout
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center|top"
+                android:orientation="vertical">
+
+
+                <ImageView android:layout_gravity="center_horizontal"
+                    android:layout_width="fill_parent"
+                    android:layout_height="210dp"
+                    android:scaleType="centerCrop"
+                    android:id="@+id/photo"
+                    android:src="@drawable/news_feed_img"
+                    />
+
+
+                <com.github.siyamed.shapeimageview.CircularImageView
+                    android:id="@+id/user_profile_img"
+                    android:layout_gravity="center_horizontal"
+                    android:layout_width="100dp"
+                    android:layout_height="100dp"
+                    android:scaleType="centerCrop"
+                    android:src="@drawable/default_profile_picture"
+                    android:layout_centerVertical="true"
+                    android:layout_centerHorizontal="true" />
+
+                <views.CustomTextViewLight
+                    android:id="@+id/photo2"
+                    android:layout_gravity="center_horizontal"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="10dp"
+                    android:textSize="18dp"
+                    android:textColor="#CCffffff"
+                    android:text="Total\nRecognition"
+                    android:layout_alignBottom="@+id/photo"
+                    android:src="@drawable/default_profile_picture"
+                    />
+
+                <views.CustomTextViewMedium
+                    android:id="@+id/txt_username"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textAppearance="?android:attr/textAppearanceSmall"
+                    android:text="Abhishek Shukla"
+                    android:layout_marginTop="10dp"
+                    android:textSize="20dp"
+                    android:textColor="@color/white"
+                    android:layout_alignParentTop="true"
+                    android:layout_alignLeft="@+id/photo2"
+                    android:layout_alignStart="@+id/photo2" />
+
+
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/imageView"
+                    android:layout_marginRight="5dp"
+                    android:src="@drawable/edit_profile"
+                    android:layout_alignTop="@+id/textView"
+                    android:layout_alignParentRight="true"
+                    android:layout_alignParentEnd="true" />
+
+
+                <views.CustomTextViewRegular
+                    android:id="@+id/recognition_given"
+                    android:layout_gravity="center_horizontal"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="10dp"
+                    android:textSize="18dp"
+                    android:textColor="@color/white"
+                    android:text=""
+                    android:layout_centerHorizontal="true"
+                    android:layout_alignBottom="@+id/photo"
+                    android:src="@drawable/default_profile_picture"
+                    />
+
+
+                <views.CustomTextViewRegular
+                    android:id="@+id/recognition_recieved"
+                    android:layout_gravity="center_horizontal"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textSize="18dp"
+                    android:textColor="@color/white"
+                    android:text=""
+                    android:src="@drawable/default_profile_picture"
+                    android:layout_alignTop="@+id/photo2"
+                    android:layout_alignRight="@+id/imageView"
+                    android:layout_alignEnd="@+id/imageView" />
+
+            </RelativeLayout>
+
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_weight=".600"
+            android:layout_width="fill_parent"
+            android:layout_height="0dp"
+            android:layout_marginBottom="10dp"
+            android:orientation="vertical"
+            android:weightSum="6.5">
+
+            <LinearLayout
+                android:layout_weight="1"
+                android:layout_width="fill_parent"
+                android:layout_height="0dp"
+                android:layout_marginLeft="10dp"
+                android:layout_marginRight="10dp"
+                android:layout_gravity="center"
+                android:gravity="center"
+                android:orientation="horizontal">
+
+                <views.CustomTextViewLight
+                    android:id="@+id/quote"
+                    android:layout_width="fill_parent"
+                    android:gravity="center"
+                    android:layout_height="wrap_content"
+                    android:textColor="@color/black"
+                    android:singleLine="true"
+                    android:text="@string/test"
+                    android:textSize="18dp"
+                    />
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_weight="1"
+                android:layout_width="fill_parent"
+                android:layout_height="0dp"
+                android:orientation="horizontal">
+
+                <LinearLayout
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:gravity="center"
+                    android:layout_marginLeft="10dp"
+                    android:layout_marginRight="10dp"
+                    android:orientation="horizontal"
+                    android:weightSum="2.2">
+
+                    <views.CustomTextViewRegular
+                        android:layout_width="0dp"
+                        android:layout_weight=".6"
+                        android:gravity="center|left"
+                        android:layout_height="wrap_content"
+                        android:textColor="#b3000000"
+                        android:text="Company"
+                        android:textSize="17dp"
+                        />
+
+                    <views.CustomTextViewRegular
+                        android:layout_width="0dp"
+                        android:layout_weight=".2"
+                        android:gravity="center"
+                        android:layout_height="wrap_content"
+                        android:textColor="@color/black"
+                        android:text=":"
+                        android:textSize="18dp"
+                        />
+
+
+                    <views.CustomTextViewRegular
+                        android:id="@+id/company_txt"
+                        android:layout_width="0dp"
+                        android:layout_weight="1.4"
+                        android:gravity="center|left"
+                        android:singleLine="true"
+                        android:layout_height="wrap_content"
+                        android:textColor="@color/black"
+                        android:text="company"
+                        android:textSize="18dp"
+                        />
+
+                </LinearLayout>
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_weight="1"
+                android:layout_width="fill_parent"
+                android:layout_height="0dp"
+                android:orientation="horizontal">
+
+                <LinearLayout
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:layout_marginLeft="10dp"
+                    android:layout_marginRight="10dp"
+                    android:orientation="horizontal"
+                    android:weightSum="2.2">
+
+                    <views.CustomTextViewRegular
+                        android:layout_width="0dp"
+                        android:layout_weight=".6"
+                        android:gravity="center|left"
+                        android:layout_height="wrap_content"
+                        android:textColor="#b3000000"
+                        android:text="Department"
+                        android:textSize="17dp"
+                        />
+
+                    <views.CustomTextViewRegular
+                        android:layout_width="0dp"
+                        android:layout_weight=".2"
+                        android:gravity="center"
+                        android:layout_height="wrap_content"
+                        android:textColor="@color/black"
+                        android:text=":"
+                        android:textSize="18dp"
+                        />
+
+
+                    <views.CustomTextViewRegular
+                        android:id="@+id/department_txt"
+                        android:layout_width="0dp"
+                        android:layout_weight="1.4"
+                        android:gravity="center|left"
+                        android:singleLine="true"
+                        android:layout_height="wrap_content"
+                        android:textColor="@color/black"
+                        android:text="department"
+                        android:textSize="18dp"
+                        />
+
+                </LinearLayout>
+
+            </LinearLayout>
+
+
+            <LinearLayout
+                android:layout_weight="1"
+                android:layout_width="fill_parent"
+                android:layout_height="0dp"
+                android:orientation="horizontal">
+
+                <LinearLayout
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:layout_marginLeft="10dp"
+                    android:layout_marginRight="10dp"
+                    android:orientation="horizontal"
+                    android:weightSum="2.2">
+
+                    <views.CustomTextViewRegular
+                        android:layout_width="0dp"
+                        android:layout_weight=".6"
+                        android:gravity="center|left"
+                        android:layout_height="wrap_content"
+                        android:textColor="#b3000000"
+                        android:text="Role Profile"
+                        android:textSize="17dp"
+                        />
+
+                    <views.CustomTextViewRegular
+                        android:layout_width="0dp"
+                        android:layout_weight=".2"
+                        android:gravity="center"
+                        android:layout_height="wrap_content"
+                        android:textColor="@color/black"
+                        android:text=":"
+                        android:textSize="18dp"
+                        />
+
+
+                    <views.CustomTextViewRegular
+                        android:id="@+id/roleprofile_txt"
+                        android:layout_width="0dp"
+                        android:layout_weight="1.4"
+                        android:gravity="center|left"
+                        android:singleLine="true"
+                        android:layout_height="wrap_content"
+                        android:textColor="@color/black"
+                        android:text="role Profile"
+                        android:textSize="18dp"
+                        />
+
+                </LinearLayout>
+
+            </LinearLayout>
+
+
+            <LinearLayout
+                android:layout_weight="1"
+                android:layout_width="fill_parent"
+                android:layout_height="0dp"
+                android:orientation="horizontal">
+
+                <LinearLayout
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:layout_marginLeft="10dp"
+                    android:layout_marginRight="10dp"
+                    android:orientation="horizontal"
+                    android:weightSum="2.2">
+
+                    <views.CustomTextViewRegular
+                        android:layout_width="0dp"
+                        android:layout_weight=".6"
+                        android:gravity="center|left"
+                        android:layout_height="wrap_content"
+                        android:textColor="#b3000000"
+                        android:text="Experiance"
+                        android:textSize="17dp"
+                        />
+
+                    <views.CustomTextViewRegular
+                        android:layout_width="0dp"
+                        android:layout_weight=".2"
+                        android:gravity="center"
+                        android:layout_height="wrap_content"
+                        android:textColor="@color/black"
+                        android:text=":"
+                        android:textSize="18dp"
+                        />
+
+
+                    <views.CustomTextViewRegular
+                        android:id="@+id/experience_txt"
+                        android:layout_width="0dp"
+                        android:layout_weight="1.4"
+                        android:gravity="center|left"
+                        android:singleLine="true"
+                        android:layout_height="wrap_content"
+                        android:textColor="@color/black"
+                        android:text="experiance"
+                        android:textSize="18dp"
+                        />
+
+                </LinearLayout>
+
+            </LinearLayout>
+
+
+            <LinearLayout
+                android:layout_weight="1.5"
+                android:layout_width="fill_parent"
+                android:layout_height="0dp"
+                android:orientation="horizontal">
+
+                <LinearLayout
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:gravity="center"
+                    android:layout_marginLeft="10dp"
+                    android:orientation="horizontal"
+                    android:weightSum="2.2">
+
+                    <views.CustomTextViewRegular
+                        android:layout_width="0dp"
+                        android:layout_weight=".6"
+                        android:gravity="center|left"
+                        android:layout_height="wrap_content"
+                        android:textColor="#b3000000"
+                        android:text="Hobbies"
+                        android:textSize="17dp"
+                        />
+
+                    <views.CustomTextViewRegular
+                        android:layout_width="0dp"
+                        android:layout_weight=".2"
+                        android:gravity="center"
+                        android:layout_height="wrap_content"
+                        android:textColor="@color/black"
+                        android:text=":"
+                        android:textSize="18dp"
+                        />
+
+
+                    <views.CustomTextViewRegular
+                        android:id="@+id/hobbies_txt"
+                        android:layout_width="0dp"
+                        android:layout_weight=".8"
+                        android:gravity="center|left"
+                        android:singleLine="true"
+                        android:layout_height="wrap_content"
+                        android:textColor="@color/black"
+                        android:text="hobbies"
+                        android:textSize="18dp"
+                        />
+
+                    <ImageView
+                        android:layout_width="0dp"
+                        android:layout_weight=".6"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center"
+                        android:contentDescription="@null"
+                        android:textColor="@color/white"
+                        android:src="@drawable/xpression_ic"
+                        android:gravity="center"
+                        />
+
+                </LinearLayout>
+
+            </LinearLayout>
+
+
+
+
+            </LinearLayout>
+
+        </LinearLayout>
+
+
+        <LinearLayout
+            android:id="@+id/second_ll"
+            android:layout_width="fill_parent"
+            android:layout_weight="1"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:visibility="gone">
+
+            <FrameLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+              <!--  <include layout="@layout/content_main" />-->
+
+                <android.support.v7.widget.RecyclerView
+                    android:id="@+id/recentactivitylist"
+                    android:layout_width="match_parent"
+                    android:visibility="visible"
+                    android:layout_height="match_parent">
+
+                </android.support.v7.widget.RecyclerView>
+
+                <ImageView
+                    android:id="@+id/fab"
+                    android:layout_width="70dp"
+                    android:layout_height="70dp"
+                    android:layout_gravity="bottom|right|center"
+                    android:layout_margin="10dp"
+                    android:src="@drawable/xpression_ic"/>
+
+            </FrameLayout>
+
+        </LinearLayout>
+
+    <!--    </ScrollView>-->
+    </LinearLayout>
+
+</LinearLayout>

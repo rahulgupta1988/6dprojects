@@ -1,0 +1,145 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:weightSum=".9"
+        android:background="#BF433A">
+
+        <RelativeLayout
+            android:id="@+id/srijan_tab"
+            android:layout_weight=".3"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+
+            android:elevation="10dp">
+
+            <View
+                android:id="@+id/srijan_tab_line"
+                android:layout_width="match_parent"
+                android:layout_height="2dp"
+                android:background="#ffffff"
+                android:layout_alignParentBottom="true"/>
+
+            <TextView
+                android:id="@+id/srijan_tab_txt"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:text="Srijan 2.0"
+                android:textSize="15sp"
+                android:gravity="center"
+                android:textColor="#ffffff"
+                android:layout_alignParentTop="true"
+                android:layout_centerHorizontal="true"
+                android:textStyle="bold"/>
+
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:id="@+id/policy_tab"
+            android:layout_weight=".3"
+            android:layout_width="0dp"
+            android:layout_height="match_parent">
+
+            <TextView
+                android:id="@+id/policy_tab_txt"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:text="Policies"
+                android:textSize="15sp"
+                android:gravity="center"
+                android:textColor="#ffffff"
+                android:textStyle="bold"/>
+
+            <View
+                android:id="@+id/policy_tab_line"
+                android:layout_width="match_parent"
+                android:layout_height="2dp"
+                android:background="#ffffff"
+                android:layout_alignParentBottom="true"
+                android:visibility="gone"/>
+
+        </RelativeLayout>
+        <RelativeLayout
+            android:id="@+id/cluster_tab"
+            android:layout_weight=".3"
+            android:layout_width="0dp"
+            android:layout_height="match_parent">
+
+            <TextView
+                android:id="@+id/cluster_tab_txt"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:text="Clusters"
+                android:textSize="15sp"
+                android:gravity="center"
+                android:textColor="#ffffff"
+                android:textStyle="bold"/>
+
+            <View
+                android:id="@+id/cluster_tab_line"
+                android:layout_width="match_parent"
+                android:layout_height="2dp"
+                android:background="#ffffff"
+                android:layout_alignParentBottom="true"
+                android:visibility="gone"/>
+
+        </RelativeLayout>
+
+    </LinearLayout>
+
+
+    <LinearLayout
+        android:id="@+id/srijan_tab_lay"
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:visibility="visible">
+
+        <include layout="@layout/srijan_view" />
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/policies_tab_lay"
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:visibility="gone">
+
+        <include layout="@layout/srijan_policies_view"/>
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/cluster_tab_lay"
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:visibility="gone"
+        android:background="#e5e5e5">
+
+        <android.support.v7.widget.RecyclerView
+            android:id="@+id/cluster_list"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_margin="10dp"/>
+
+
+    </LinearLayout>
+
+    <TextView
+        android:id="@+id/no_comt_txt"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:text="No Comments Available."
+        android:gravity="center"
+        android:textStyle="bold"
+        android:visibility="gone"/>
+
+</LinearLayout>
